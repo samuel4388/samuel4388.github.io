@@ -3,7 +3,7 @@ project:
   output-dir: .
 
 website:
-  title: "myblog"
+  title: "사무엘의 수리 언어 블로그"
   navbar:
     right:
       - about.qmd
