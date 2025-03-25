@@ -17,6 +17,8 @@ format:
       - cosmo
       - brand
     css: styles.css
+    math: mathjax
+
 
 
 
