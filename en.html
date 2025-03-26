@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>English Blog – 사무엘의 수리 언어 블로그</title>
+<title>Samuel’s Mathematical Language Blog – 사무엘의 수리 언어 블로그</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -183,18 +183,20 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y2FsY3VsdXM=">calculus <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWF0aA==">math <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">English Blog</h1>
+<h1 class="title">Samuel’s Mathematical Language Blog</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -206,85 +208,120 @@ window.Quarto = {
 </header>
 
 
-<p>Welcome to Samuel’s English-language blog 🇺🇸</p>
+<p>Welcome to Samuel’s Mathematical Language Blog!</p>
 
 
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="bWF0aCUyQ2NhbGN1bHVz" data-listing-date-sort="1742914800000" data-listing-file-modified-sort="1742989132431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="thumbnail">
+<p><a href="./posts/en/2025-03-26-green-theorem/index.html" class="no-external"></a></p><a href="./posts/en/2025-03-26-green-theorem/index.html" class="no-external">
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+</a><p><a href="./posts/en/2025-03-26-green-theorem/index.html" class="no-external"></a></p>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
-Categories
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="bWF0aCUyQ2NhbGN1bHVz" data-listing-date-sort="1742914800000" data-listing-file-modified-sort="1742989132431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="54" data-listing-title-sort="Green's Theorem" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./posts/en/2025-03-26-green-theorem/index.html" class="title listing-title">Green’s Theorem</a>
-</td>
-<td>
-<span class="listing-date">Mar 26, 2025</span>
-</td>
-<td>
-<span class="listing-categories">math, calculus</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1742828400000" data-listing-file-modified-sort="1742910676597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7" data-listing-title-sort="Post With Code" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./posts/en/post-with-code/index.html" class="title listing-title">Post With Code</a>
-</td>
-<td>
-<span class="listing-date">Mar 25, 2025</span>
-</td>
-<td>
-<span class="listing-categories">news, code, analysis</span>
-</td>
-</tr>
-<tr data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1742569200000" data-listing-file-modified-sort="1742910676596" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32" data-listing-title-sort="Welcome To My Blog" data-listing-filename-sort="index.qmd">
-<td>
-<a href="./posts/en/welcome/index.html" class="title listing-title">Welcome To My Blog</a>
-</td>
-<td>
-<span class="listing-date">Mar 22, 2025</span>
-</td>
-<td>
-<span class="listing-categories">news</span>
-</td>
-</tr>
-</tbody>
-</table>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/en/2025-03-26-green-theorem/index.html" class="no-external">Green’s Theorem</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/en/2025-03-26-green-theorem/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('bWF0aA=='); return false;">
+math
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Y2FsY3VsdXM='); return false;">
+calculus
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/en/2025-03-26-green-theorem/index.html" class="no-external">Green’s Theorem relates a line integral around a simple closed curve <strong>C</strong> to a double integral over the plane region <strong>D</strong> bounded by <strong>C</strong>:</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/en/2025-03-26-green-theorem/index.html" class="no-external">
+<div class="listing-date">
+Mar 26, 2025
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1742828400000" data-listing-file-modified-sort="1742910676597" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
+<div class="thumbnail">
+<p><a href="./posts/en/post-with-code/index.html" class="no-external"></a></p><a href="./posts/en/post-with-code/index.html" class="no-external">
+<p><img loading="lazy" src="./posts/en/post-with-code/image.jpg" class="thumbnail-image"></p>
+</a><p><a href="./posts/en/post-with-code/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/en/post-with-code/index.html" class="no-external">Post With Code</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/en/post-with-code/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
+news
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">
+code
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">
+analysis
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/en/post-with-code/index.html" class="no-external">This is a post with executable code.</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/en/post-with-code/index.html" class="no-external">
+<div class="listing-date">
+Mar 25, 2025
+</div>
+<div class="listing-author">
+Harlow Malloc
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="bmV3cw==" data-listing-date-sort="1742569200000" data-listing-file-modified-sort="1742910676596" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<div class="thumbnail">
+<p><a href="./posts/en/welcome/index.html" class="no-external"></a></p><a href="./posts/en/welcome/index.html" class="no-external">
+<p class="card-img-top"><img src="posts/en/welcome/thumbnail.jpg"  class="thumbnail-image card-img"/></p>
+</a><p><a href="./posts/en/welcome/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/en/welcome/index.html" class="no-external">Welcome To My Blog</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/en/welcome/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
+news
+</div>
+</div>
+<div class="listing-description">
+<a href="./posts/en/welcome/index.html" class="no-external">This is the first post in a Quarto blog. Welcome!</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/en/welcome/index.html" class="no-external">
+<div class="listing-date">
+Mar 22, 2025
+</div>
+<div class="listing-author">
+Tristan O’Malley
+</div>
+</a>
+</div>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
