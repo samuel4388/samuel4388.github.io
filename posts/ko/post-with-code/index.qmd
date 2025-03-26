@@ -1,0 +1,9 @@
+---
+title: "코드와 포스트"
+author: "Harlow Malloc"
+date: "2025-03-25"
+categories: [news, code, analysis]
+image: "image.jpg"
+---
+
+This is a post with executable code.
