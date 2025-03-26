@@ -1,11 +1,10 @@
 ---
-title: "English Blog"
+title: "Samuel's Mathematical Language Blog"
 listing:
   contents: posts/en
-  type: table
-  sort: "date desc"
-  fields: [title, date, categories]
+  type: default
+  categories: true
 page-layout: full
 lang: en
 ---
-Welcome to Samuel's English-language blog 🇺🇸
+Welcome to Samuel's Mathematical Language Blog!
