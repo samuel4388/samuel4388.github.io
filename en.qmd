@@ -1,0 +1,11 @@
+---
+title: "English Blog"
+listing:
+  contents: posts/en
+  type: table
+  sort: "date desc"
+  fields: [title, date, categories]
+page-layout: full
+lang: en
+---
+Welcome to Samuel's English-language blog 🇺🇸

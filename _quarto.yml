@@ -5,12 +5,18 @@ project:
 website:
   title: "사무엘의 수리 언어 블로그"
   navbar:
+    left:
+      - text: "한국어"
+        href: ko.qmd
+      - text: "English"
+        href: en.qmd
     right:
       - about.qmd
       - icon: github
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
+
 format:
   html:
     theme:
@@ -18,7 +24,3 @@ format:
       - brand
     css: styles.css
     math: mathjax
-
-
-
-

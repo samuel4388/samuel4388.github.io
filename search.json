@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "myblog",
     "section": "",
-    "text": "Title\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\n코드와 포스트\n\n\nMar 25, 2025\n\n\nnews, code, analysis\n\n\n\n\nPost With Code\n\n\nMar 25, 2025\n\n\nnews, code, analysis\n\n\n\n\nWelcome To My Blog\n\n\nMar 22, 2025\n\n\nnews\n\n\n\n\nWelcome To My Blog\n\n\nMar 22, 2025\n\n\nnews\n\n\n\n\n\nNo matching items"
+    "text": "Title\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\n그린 정리\n\n\nMar 26, 2025\n\n\nmath, calculus\n\n\n\n\nGreen’s Theorem\n\n\nMar 26, 2025\n\n\nmath, calculus\n\n\n\n\n코드와 포스트\n\n\nMar 25, 2025\n\n\nnews, code, analysis\n\n\n\n\nPost With Code\n\n\nMar 25, 2025\n\n\nnews, code, analysis\n\n\n\n\nWelcome To My Blog\n\n\nMar 22, 2025\n\n\nnews\n\n\n\n\nWelcome To My Blog\n\n\nMar 22, 2025\n\n\nnews\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/ko/post-with-code/index.html",
@@ -40,5 +40,33 @@
     "title": "Welcome To My Blog",
     "section": "",
     "text": "제 블로그예요. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "en.html",
+    "href": "en.html",
+    "title": "English Blog",
+    "section": "",
+    "text": "Welcome to Samuel’s English-language blog 🇺🇸\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\nGreen’s Theorem\n\n\nMar 26, 2025\n\n\nmath, calculus\n\n\n\n\nPost With Code\n\n\nMar 25, 2025\n\n\nnews, code, analysis\n\n\n\n\nWelcome To My Blog\n\n\nMar 22, 2025\n\n\nnews\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "ko.html",
+    "href": "ko.html",
+    "title": "한국어 블로그",
+    "section": "",
+    "text": "사무엘의 한국어 블로그에 오신 걸 환영합니다 🇰🇷\n\n\n\n\n\n\n\n   \n     \n     \n       정렬\n       디폴트\n         \n          날짜 - 날짜(오름차순)\n        \n         \n          날짜 - 날짜(내림차순)\n        \n         \n          제목\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n제목\n\n\n날짜\n\n\n분류\n\n\n\n\n\n\nWelcome To My Blog\n\n\n2025. 3. 22.\n\n\nnews\n\n\n\n\n그린 정리\n\n\n2025. 3. 26.\n\n\nmath, calculus\n\n\n\n\n코드와 포스트\n\n\n2025. 3. 25.\n\n\nnews, code, analysis\n\n\n\n\n\n일치 없음"
+  },
+  {
+    "objectID": "posts/ko/2025-03-26-green-theorem/index.html",
+    "href": "posts/ko/2025-03-26-green-theorem/index.html",
+    "title": "그린 정리",
+    "section": "",
+    "text": "그린 정리는 평면에서의 선적분과 이중적분 사이의 관계를 설명하는 정리로,\n다음과 같이 표현된다:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\\\partial Q}{\\\\partial x} - \\frac{\\\\partial P}{\\\\partial y} \\\\right) dx \\, dy\n\\]\n이 정리는 선형 대수, 전자기학, 유체역학 등 다양한 분야에서 활용된다."
+  },
+  {
+    "objectID": "posts/en/2025-03-26-green-theorem/index.html",
+    "href": "posts/en/2025-03-26-green-theorem/index.html",
+    "title": "Green’s Theorem",
+    "section": "",
+    "text": "Green’s Theorem relates a line integral around a simple closed curve C to a double integral over the plane region D bounded by C:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\\\partial Q}{\\\\partial x} - \\frac{\\\\partial P}{\\\\partial y} \\\\right) dx \\, dy\n\\]\nIt has applications in linear algebra, electromagnetism, and fluid dynamics."
   }
 ]
