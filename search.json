@@ -9,9 +9,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "myblog",
+    "title": "Welcome",
     "section": "",
-    "text": "Title\n\n\nDate\n\n\nCategories\n\n\n\n\n\n\n그린 정리\n\n\nMar 26, 2025\n\n\nmath, calculus\n\n\n\n\nGreen’s Theorem\n\n\nMar 26, 2025\n\n\nmath, calculus\n\n\n\n\n코드와 포스트\n\n\nMar 25, 2025\n\n\nnews, code, analysis\n\n\n\n\nPost With Code\n\n\nMar 25, 2025\n\n\nnews, code, analysis\n\n\n\n\nWelcome To My Blog\n\n\nMar 22, 2025\n\n\nnews\n\n\n\n\nWelcome To My Blog\n\n\nMar 22, 2025\n\n\nnews\n\n\n\n\n\nNo matching items"
+    "text": "저는 다양한 언어와 수학을 좋아하는 사무엘(본명: 김상윤)입니다.\n이 블로그는 외국어, 수학, 언어학, 프로그래밍 등\n제가 공부한 내용을 정리하고 공유하는 공간입니다.\n\n\n\n\n🇰🇷 한국어 블로그로 가기\n🇬🇧 Go to English Blog"
   },
   {
     "objectID": "posts/en/welcome/index.html",
@@ -68,5 +68,12 @@
     "title": "소개",
     "section": "",
     "text": "저는 다양한 언어와 수학을 좋아하는 사무엘(본명: 김상윤(金尙潤))입니다. 이 블로그는 외국어 공부, 언어학, 수학, 프로그래밍 등 제가 공부한 내용을 정리하고 공유하는 공간입니다."
+  },
+  {
+    "objectID": "index.html#언어-선택",
+    "href": "index.html#언어-선택",
+    "title": "Welcome",
+    "section": "",
+    "text": "🇰🇷 한국어 블로그로 가기\n🇬🇧 Go to English Blog"
   }
 ]
