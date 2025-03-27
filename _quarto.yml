@@ -13,9 +13,9 @@ website:
     right:
       - about.qmd
       - icon: github
-        href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/samuel4388
+      - icon: twitter-x
+        href: https://x.com/sam458755
 
 format:
   html:
