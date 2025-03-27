@@ -1,5 +1,5 @@
 ---
-title: "사무엘의 수리 언어 블로그"
+title: "한국어 블로그"
 listing:
   contents: posts/ko
   type: default
@@ -7,4 +7,3 @@ listing:
 page-layout: full
 lang: ko
 ---
-사무엘의 수리 언어 블로그에 오신 걸 환영합니다!
