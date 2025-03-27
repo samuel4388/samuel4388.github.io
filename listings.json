@@ -2,20 +2,7 @@
   {
     "listing": "/ko.html",
     "items": [
-      "/posts/ko/welcome/index.html",
-      "/posts/ko/2025-03-26-green-theorem/index.html",
-      "/posts/ko/post-with-code/index.html"
-    ]
-  },
-  {
-    "listing": "/index.html",
-    "items": [
-      "/posts/ko/2025-03-26-green-theorem/index.html",
-      "/posts/en/2025-03-26-green-theorem/index.html",
-      "/posts/ko/post-with-code/index.html",
-      "/posts/en/post-with-code/index.html",
-      "/posts/ko/welcome/index.html",
-      "/posts/en/welcome/index.html"
+      "/posts/ko/2025-03-26-green-theorem/index.html"
     ]
   },
   {

@@ -1,5 +1,5 @@
 ---
-title: "그린 정리"
+title: "그린 정리란 무엇일까"
 lang: ko
 translation-key: 2025-03-26-green-theorem
 categories: [math, calculus]

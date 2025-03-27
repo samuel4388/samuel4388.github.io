@@ -4,14 +4,21 @@
     "href": "ko.html",
     "title": "사무엘의 수리 언어 블로그",
     "section": "",
-    "text": "사무엘의 수리 언어 블로그에 오신 걸 환영합니다!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n2025. 3. 22.\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\n그린 정리\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n\n\n\n\n\n\n코드와 포스트\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n2025. 3. 25.\n\n\nHarlow Malloc\n\n\n\n\n\n\n일치 없음"
+    "text": "사무엘의 수리 언어 블로그에 오신 걸 환영합니다!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n그린 정리란 무엇일까\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n일치 없음"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Welcome",
+    "title": "인사말",
     "section": "",
-    "text": "저는 다양한 언어와 수학을 좋아하는 사무엘(본명: 김상윤)입니다.\n이 블로그는 외국어, 수학, 언어학, 프로그래밍 등\n제가 공부한 내용을 정리하고 공유하는 공간입니다.\n\n\n\n\n🇰🇷 한국어 블로그로 가기\n🇬🇧 Go to English Blog"
+    "text": "저는 다양한 언어와 수학을 좋아하는 사무엘(본명: 김상윤(金尙潤))입니다.\n이 블로그는 외국어, 수학, 언어학, 프로그래밍 등 제가 공부한 내용을 정리하고 공유하는 공간입니다."
+  },
+  {
+    "objectID": "index.html#언어-선택",
+    "href": "index.html#언어-선택",
+    "title": "인사말",
+    "section": "🌐 언어 선택",
+    "text": "🌐 언어 선택\n\n🇰🇷 한국어 블로그\n🇬🇧 English Blog"
   },
   {
     "objectID": "posts/en/welcome/index.html",
@@ -23,16 +30,9 @@
   {
     "objectID": "posts/ko/2025-03-26-green-theorem/index.html",
     "href": "posts/ko/2025-03-26-green-theorem/index.html",
-    "title": "그린 정리",
+    "title": "그린 정리란 무엇일까",
     "section": "",
     "text": "그린 정리는 평면에서의 선적분과 이중적분 사이의 관계를 설명하는 정리로,\n다음과 같이 표현된다:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\n\\]\n이 정리는 선형 대수, 전자기학, 유체역학 등 다양한 분야에서 활용된다."
-  },
-  {
-    "objectID": "posts/ko/post-with-code/index.html",
-    "href": "posts/ko/post-with-code/index.html",
-    "title": "코드와 포스트",
-    "section": "",
-    "text": "This is a post with executable code."
   },
   {
     "objectID": "en.html",
@@ -40,13 +40,6 @@
     "title": "Samuel’s Mathematical Language Blog",
     "section": "",
     "text": "Welcome to Samuel’s Mathematical Language Blog!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreen’s Theorem\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\nMar 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 22, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/ko/welcome/index.html",
-    "href": "posts/ko/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "제 블로그예요. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
     "objectID": "posts/en/post-with-code/index.html",
@@ -68,12 +61,5 @@
     "title": "소개",
     "section": "",
     "text": "저는 다양한 언어와 수학을 좋아하는 사무엘(본명: 김상윤(金尙潤))입니다. 이 블로그는 외국어 공부, 언어학, 수학, 프로그래밍 등 제가 공부한 내용을 정리하고 공유하는 공간입니다."
-  },
-  {
-    "objectID": "index.html#언어-선택",
-    "href": "index.html#언어-선택",
-    "title": "Welcome",
-    "section": "",
-    "text": "🇰🇷 한국어 블로그로 가기\n🇬🇧 Go to English Blog"
   }
 ]
