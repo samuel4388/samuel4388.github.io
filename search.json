@@ -1,10 +1,38 @@
 [
   {
+    "objectID": "posts/ko/2025-03-26-green-theorem/index.html",
+    "href": "posts/ko/2025-03-26-green-theorem/index.html",
+    "title": "그린 정리란 무엇일까",
+    "section": "",
+    "text": "C: 오늘은 그린 정리에 대해서 배워 보자.\nA: 그린 정리가 뭐야?\nC: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.\n그린 정리를 식으로 나타내면 다음과 같아:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\n\\]\n즉, 좌변이 \\(\\oint_C (P \\, dx + Q \\, dy)\\)의 형태일 때, 우변인 \\(\\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\\)의 형태로 바꾸거나, 그 반대로 바꿀 수 있다는 거지.\nA: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.\nC: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?\nA: 미적분학의 기본 정리를 말하는 거구나:\n\\[\\int_a^b F'(x)\\, dx = F(b) - F(a)\\]\n적분 기호 안의 \\(F'(x)\\)가 \\(F(x)\\)의 도함수이기 때문에 가능한 식이지. 즉, 원시 함수를 이용해서 적분을 풀 수 있음을 보여주는 거지.\n그러면 \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\)라는 식은 다변수 함수에서의 도함수와 같은 식이라고 볼 수 있겠다.\nC: \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\) 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든.\n동기화 확인"
+  },
+  {
+    "objectID": "posts/en/post-with-code/index.html",
+    "href": "posts/en/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
     "objectID": "ko.html",
     "href": "ko.html",
     "title": "한국어 블로그",
     "section": "",
     "text": "그린 정리란 무엇일까\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n일치 없음"
+  },
+  {
+    "objectID": "en.html",
+    "href": "en.html",
+    "title": "Samuel’s Mathematical Language Blog",
+    "section": "",
+    "text": "Welcome to Samuel’s Mathematical Language Blog!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreen’s Theorem\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\nMar 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 22, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "소개",
+    "section": "",
+    "text": "저는 다양한 언어와 수학을 좋아하는 사무엘(본명: 김상윤(金尙潤))입니다. 이 블로그는 외국어 공부, 언어학, 수학, 프로그래밍 등 제가 공부한 내용을 정리하고 공유하는 공간입니다."
   },
   {
     "objectID": "index.html",
@@ -21,34 +49,6 @@
     "text": "🌐 언어 선택\n\n🇰🇷 한국어 블로그\n🇬🇧 English Blog"
   },
   {
-    "objectID": "posts/en/welcome/index.html",
-    "href": "posts/en/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/ko/2025-03-26-green-theorem/index.html",
-    "href": "posts/ko/2025-03-26-green-theorem/index.html",
-    "title": "그린 정리란 무엇일까",
-    "section": "",
-    "text": "C: 오늘은 그린 정리에 대해서 배워 보자.\nA: 그린 정리가 뭐야?\nC: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.\n그린 정리를 식으로 나타내면 다음과 같아:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\n\\]\n즉, 좌변이 \\(\\oint_C (P \\, dx + Q \\, dy)\\)의 형태일 때, 우변인 \\(\\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\\)의 형태로 바꾸거나, 그 반대로 바꿀 수 있다는 거지.\nA: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.\nC: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?\nA: 미적분학의 기본 정리를 말하는 거구나:\n\\[\\int_a^b F'(x)\\, dx = F(b) - F(a)\\]\n적분 기호 안의 \\(F'(x)\\)가 \\(F(x)\\)의 도함수이기 때문에 가능한 식이지. 즉, 원시 함수를 이용해서 적분을 풀 수 있음을 보여주는 거지.\n그러면 \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\)라는 식은 다변수 함수에서의 도함수와 같은 식이라고 볼 수 있겠다.\nC: \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\) 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든."
-  },
-  {
-    "objectID": "en.html",
-    "href": "en.html",
-    "title": "Samuel’s Mathematical Language Blog",
-    "section": "",
-    "text": "Welcome to Samuel’s Mathematical Language Blog!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreen’s Theorem\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\nMar 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 22, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/en/post-with-code/index.html",
-    "href": "posts/en/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
-  },
-  {
     "objectID": "posts/en/2025-03-26-green-theorem/index.html",
     "href": "posts/en/2025-03-26-green-theorem/index.html",
     "title": "Green’s Theorem",
@@ -56,10 +56,10 @@
     "text": "Green’s Theorem relates a line integral around a simple closed curve C to a double integral over the plane region D bounded by C:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\\\partial Q}{\\\\partial x} - \\frac{\\\\partial P}{\\\\partial y} \\\\right) dx \\, dy\n\\]\nIt has applications in linear algebra, electromagnetism, and fluid dynamics."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "소개",
+    "objectID": "posts/en/welcome/index.html",
+    "href": "posts/en/welcome/index.html",
+    "title": "Welcome To My Blog",
     "section": "",
-    "text": "저는 다양한 언어와 수학을 좋아하는 사무엘(본명: 김상윤(金尙潤))입니다. 이 블로그는 외국어 공부, 언어학, 수학, 프로그래밍 등 제가 공부한 내용을 정리하고 공유하는 공간입니다."
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   }
 ]
