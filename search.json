@@ -4,7 +4,7 @@
     "href": "ko.html",
     "title": "한국어 블로그",
     "section": "",
-    "text": "Crossy Road와 확률\n\n\n\n\n\n\nlife\n\n\nmathematics\n\n\nprobability\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n\n\n\n\n\n\n그린 정리란 무엇일까\n\n\n\n\n\n\nmathematics\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n일치 없음"
+    "text": "Crossy Road와 확률\n\n\n\n\n\n\nlife\n\n\nmathematics\n\n\nprobability\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n\n\n\n\n\n\n그린 정리란 무엇일까\n\n\n\n\n\n\nmathematics\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n\n\n\n\n\n\n자연어와 컴퓨터 언어\n\n\n\n\n\n\nlanguage\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n일치 없음"
   },
   {
     "objectID": "index.html",
@@ -33,6 +33,13 @@
     "title": "Crossy Road와 확률",
     "section": "",
     "text": "Crossy Road 플레이 캡처 사진\n\n\nCrossy Road(길건너 친구들)를 플레이하면서 이런 생각이 들었다.\n내가 한 스텝 건널 때마다 죽을 확률이 있지 않을까?\n물론 내가 한 스텝 건널 때마다 죽을 확률이 도로 위, 강 위, 철도 위인지에 따라 다르겠지만,\n평균적으로 한 스텝 건널 때마다 죽을 확률을 생각할 수 있지 않을까?\n나는 평균 200점에서 300점 정도가 나오는데,\n나보다 점수가 월등히 높게 나오는, 500점, 600점을 쉽게 받는 사람들은 한 스텝 건널 때의 죽을 확률이 나보다 현저히 낮지 않을까?\n한 스텝 건널 때마다 죽을 확률이 점수에 어떻게 영향을 미치게 될지 궁금해졌다.\n내가 로스의 확률론을 끝내고 나면 이에 대한 답을 얻을 수 있지 않을까."
+  },
+  {
+    "objectID": "posts/ko/2025-03-30-natural-language-and-computer-language/index.html",
+    "href": "posts/ko/2025-03-30-natural-language-and-computer-language/index.html",
+    "title": "자연어와 컴퓨터 언어",
+    "section": "",
+    "text": "국비 코딩 학원에서 코딩을 하다가 문득 이런 생각이 들었다:\n자연어는 극도로 높은 수준의 컴퓨터 언어라고 할 수 있지 않을까?\n까딱하면 실행이 안 되는 컴퓨터 언어와 달리,\n자연어에서는 사소한 문법 실수가 있어도 소통하는 데 지장이 없다.\n근데 이거 완전 html, css 아닌가?\n프로젝트에서 프론트 엔드를 맡게 되다 보니 이런 생각을 할 수 있게 된 것 같다.\n컴퓨터 언어에서는 변수가 중요하다.\n그렇다면 자연어에서는 변수를 어떻게 처리할까?\n자연어도 깊게 파고 들어가면 컴퓨터 언어와 비슷한 원리로 동작할 것 같다는 느낌이 든다.\n단지 표면상으로 드러나는 게 컴퓨터 언어와 너무 달라서 이 둘의 연관성을 찾기 힘들다는 문제가 있다.\n수학적으로 언어를 분석하면 컴퓨터 언어와의 공통점이 보이지 않을까 싶다."
   },
   {
     "objectID": "en.html",
