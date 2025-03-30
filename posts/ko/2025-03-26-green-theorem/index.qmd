@@ -6,21 +6,23 @@ categories: [math, calculus]
 date: 2025-03-26
 ---
 
-<span class="speaker-c">C</span>: 오늘은 그린 정리에 대해서 배워 보자.  
-<span class="speaker-a">A</span>: 그린 정리가 뭐야?  
-<span class="speaker-c">C</span>: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.  
+그린 정리는
+
+<span class="speaker">👨🏻‍🏫</span>: 오늘은 그린 정리에 대해서 배워 보자.  
+<span class="speaker">👨🏻‍🎓</span>: 그린 정리가 뭐야?  
+<span class="speaker">👨🏻‍🏫</span>: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.  
 그린 정리를 식으로 나타내면 다음과 같아:  
 $$
 \oint_C (P \, dx + Q \, dy) = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dx \, dy
 $$  
 즉, 좌변이 <span class="boxed-math">$\oint_C (P \, dx + Q \, dy)$</span>의 형태일 때, 우변인 <span class="boxed-math">$\iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dx \, dy
 $</span>의 형태로 바꾸거나, 그 반대로 바꿀 수 있다는 거지.  
-<span class="speaker-a">A</span>: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.  
-<span class="speaker-c">C</span>: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?  
-<span class="speaker-a">A</span>: 미적분학의 기본 정리를 말하는 거구나:  
+<span class="speaker">👨🏻‍🎓</span>: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.  
+<span class="speaker">👨🏻‍🏫</span>: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?  
+<span class="speaker">👨🏻‍🎓</span>: 미적분학의 기본 정리를 말하는 거구나:  
 $$\int_a^b F'(x)\, dx = F(b) - F(a)$$  
 적분 기호 안의 $F'(x)$가 $F(x)$의 도함수이기 때문에 가능한 식이지. 즉, 원시 함수를 이용해서 적분을 풀 수 있음을 보여주는 거지.  
 그러면 <span class="boxed-math">$\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}$</span>라는 식은 다변수 함수에서의 도함수와 같은 식이라고 볼 수 있겠다.  
-<span class="speaker-c">C</span>: <span class="boxed-math">$\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}$</span> 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든.  
+<span class="speaker">👨🏻‍🏫</span>: <span class="boxed-math">$\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}$</span> 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든.  
 
 동기화 확인

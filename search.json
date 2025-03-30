@@ -4,7 +4,7 @@
     "href": "posts/ko/2025-03-26-green-theorem/index.html",
     "title": "그린 정리란 무엇일까",
     "section": "",
-    "text": "C: 오늘은 그린 정리에 대해서 배워 보자.\nA: 그린 정리가 뭐야?\nC: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.\n그린 정리를 식으로 나타내면 다음과 같아:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\n\\]\n즉, 좌변이 \\(\\oint_C (P \\, dx + Q \\, dy)\\)의 형태일 때, 우변인 \\(\\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\\)의 형태로 바꾸거나, 그 반대로 바꿀 수 있다는 거지.\nA: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.\nC: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?\nA: 미적분학의 기본 정리를 말하는 거구나:\n\\[\\int_a^b F'(x)\\, dx = F(b) - F(a)\\]\n적분 기호 안의 \\(F'(x)\\)가 \\(F(x)\\)의 도함수이기 때문에 가능한 식이지. 즉, 원시 함수를 이용해서 적분을 풀 수 있음을 보여주는 거지.\n그러면 \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\)라는 식은 다변수 함수에서의 도함수와 같은 식이라고 볼 수 있겠다.\nC: \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\) 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든.\n동기화 확인"
+    "text": "그린 정리는\n👨🏻‍🏫: 오늘은 그린 정리에 대해서 배워 보자.\n👨🏻‍🎓: 그린 정리가 뭐야?\n👨🏻‍🏫: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.\n그린 정리를 식으로 나타내면 다음과 같아:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\n\\]\n즉, 좌변이 \\(\\oint_C (P \\, dx + Q \\, dy)\\)의 형태일 때, 우변인 \\(\\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\\)의 형태로 바꾸거나, 그 반대로 바꿀 수 있다는 거지.\n👨🏻‍🎓: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.\n👨🏻‍🏫: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?\n👨🏻‍🎓: 미적분학의 기본 정리를 말하는 거구나:\n\\[\\int_a^b F'(x)\\, dx = F(b) - F(a)\\]\n적분 기호 안의 \\(F'(x)\\)가 \\(F(x)\\)의 도함수이기 때문에 가능한 식이지. 즉, 원시 함수를 이용해서 적분을 풀 수 있음을 보여주는 거지.\n그러면 \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\)라는 식은 다변수 함수에서의 도함수와 같은 식이라고 볼 수 있겠다.\n👨🏻‍🏫: \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\) 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든.\n동기화 확인"
   },
   {
     "objectID": "posts/en/post-with-code/index.html",
@@ -18,7 +18,7 @@
     "href": "ko.html",
     "title": "한국어 블로그",
     "section": "",
-    "text": "그린 정리란 무엇일까\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n일치 없음"
+    "text": "Crossy Road와 확률\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n\n\n\n\n\n\n그린 정리란 무엇일까\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n일치 없음"
   },
   {
     "objectID": "en.html",
@@ -61,5 +61,12 @@
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/ko/2025-03-30-crossy-road-and-probability/index.html",
+    "href": "posts/ko/2025-03-30-crossy-road-and-probability/index.html",
+    "title": "Crossy Road와 확률",
+    "section": "",
+    "text": "Crossy Road 플레이 캡처 사진\n\n\nCrossy Road(길건너 친구들)를 플레이하면서 이런 생각이 들었다.\n내가 한 스텝 건널 때마다 죽을 확률이 있지 않을까?\n물론 내가 한 스텝 건널 때마다 죽을 확률이 도로 위, 강 위, 철도 위인지에 따라 다르겠지만,\n평균적으로 한 스텝 건널 때마다 죽을 확률을 생각할 수 있지 않을까?\n나는 평균 200점에서 300점 정도가 나오는데,\n나보다 점수가 월등히 높게 나오는, 500점, 600점을 쉽게 받는 사람들은 한 스텝 건널 때의 죽을 확률이 나보다 현저히 낮지 않을까?\n한 스텝 건널 때마다 죽을 확률이 점수에 어떻게 영향을 미치게 될지 궁금해졌다.\n내가 로스의 확률론을 끝내고 나면 이에 대한 답을 얻을 수 있지 않을까."
   }
 ]
