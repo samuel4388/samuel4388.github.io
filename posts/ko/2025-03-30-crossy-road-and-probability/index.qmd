@@ -2,7 +2,7 @@
 title: "Crossy Road와 확률"
 lang: ko
 translation-key: 2025-03-30-crossy-road-and-probability
-categories: [math, calculus]
+categories: [life, mathematics, probability]
 date: 2025-03-30
 image: img_1522.png
 ---
