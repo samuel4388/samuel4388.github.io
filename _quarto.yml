@@ -4,6 +4,7 @@ project:
 
 website:
   title: "사무엘의 수리 언어 블로그"
+  favicon: images/favicon.ico
   navbar:
     left:
       - text: "한국어"
