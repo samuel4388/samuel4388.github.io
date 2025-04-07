@@ -1,10 +1,31 @@
 [
   {
-    "objectID": "ko.html",
-    "href": "ko.html",
-    "title": "한국어 블로그",
+    "objectID": "posts/ko/2025-04-07-my-discovery/index.html",
+    "href": "posts/ko/2025-04-07-my-discovery/index.html",
+    "title": "나의 발견",
     "section": "",
-    "text": "Crossy Road와 확률\n\n\n\n\n\n\nlife\n\n\nmathematics\n\n\nprobability\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n\n\n\n\n\n\n그린 정리란 무엇일까\n\n\n\n\n\n\nmathematics\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n\n\n\n\n\n\n자연어와 컴퓨터 언어\n\n\n\n\n\n\nlanguage\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n일치 없음"
+    "text": "GPT랑 대화를 하면서 확률과 미적분의 관계에 대해서 깨닫게 됐다.\n아직 공분산을 배우기 전인데 GPT한테서 공분산이 무엇인지 듣고 나니까 벡터의 코사인 유사도 생각이 났다.\n이 얘기를 GPT한테 하니까 나보고 천재란다 ㅋㅋㅋ\n이렇게 수학 분야들은 다 달라 보여도 다 연결돼 있는 것 같아서 신기하다."
+  },
+  {
+    "objectID": "posts/ko/2025-03-30-crossy-road-and-probability/index.html",
+    "href": "posts/ko/2025-03-30-crossy-road-and-probability/index.html",
+    "title": "Crossy Road와 확률",
+    "section": "",
+    "text": "Crossy Road 플레이 캡처 사진\n\n\nCrossy Road(길건너 친구들)를 플레이하면서 이런 생각이 들었다.\n내가 한 스텝 건널 때마다 죽을 확률이 있지 않을까?\n물론 내가 한 스텝 건널 때마다 죽을 확률이 도로 위, 강 위, 철도 위인지에 따라 다르겠지만,\n평균적으로 한 스텝 건널 때마다 죽을 확률을 생각할 수 있지 않을까?\n나는 평균 200점에서 300점 정도가 나오는데,\n나보다 점수가 월등히 높게 나오는, 500점, 600점을 쉽게 받는 사람들은 한 스텝 건널 때의 죽을 확률이 나보다 현저히 낮지 않을까?\n한 스텝 건널 때마다 죽을 확률이 점수에 어떻게 영향을 미치게 될지 궁금해졌다.\n내가 로스의 확률론을 끝내고 나면 이에 대한 답을 얻을 수 있지 않을까."
+  },
+  {
+    "objectID": "posts/en/welcome/index.html",
+    "href": "posts/en/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/en/2025-03-26-green-theorem/index.html",
+    "href": "posts/en/2025-03-26-green-theorem/index.html",
+    "title": "Green’s Theorem",
+    "section": "",
+    "text": "Green’s Theorem relates a line integral around a simple closed curve C to a double integral over the plane region D bounded by C:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\\\partial Q}{\\\\partial x} - \\frac{\\\\partial P}{\\\\partial y} \\\\right) dx \\, dy\n\\]\nIt has applications in linear algebra, electromagnetism, and fluid dynamics."
   },
   {
     "objectID": "index.html",
@@ -21,25 +42,11 @@
     "text": "🌐 언어 선택\n\n🇰🇷 한국어 블로그\n🇬🇧 English Blog"
   },
   {
-    "objectID": "posts/en/welcome/index.html",
-    "href": "posts/en/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "소개",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
-  },
-  {
-    "objectID": "posts/ko/2025-03-30-crossy-road-and-probability/index.html",
-    "href": "posts/ko/2025-03-30-crossy-road-and-probability/index.html",
-    "title": "Crossy Road와 확률",
-    "section": "",
-    "text": "Crossy Road 플레이 캡처 사진\n\n\nCrossy Road(길건너 친구들)를 플레이하면서 이런 생각이 들었다.\n내가 한 스텝 건널 때마다 죽을 확률이 있지 않을까?\n물론 내가 한 스텝 건널 때마다 죽을 확률이 도로 위, 강 위, 철도 위인지에 따라 다르겠지만,\n평균적으로 한 스텝 건널 때마다 죽을 확률을 생각할 수 있지 않을까?\n나는 평균 200점에서 300점 정도가 나오는데,\n나보다 점수가 월등히 높게 나오는, 500점, 600점을 쉽게 받는 사람들은 한 스텝 건널 때의 죽을 확률이 나보다 현저히 낮지 않을까?\n한 스텝 건널 때마다 죽을 확률이 점수에 어떻게 영향을 미치게 될지 궁금해졌다.\n내가 로스의 확률론을 끝내고 나면 이에 대한 답을 얻을 수 있지 않을까."
-  },
-  {
-    "objectID": "posts/ko/2025-03-30-natural-language-and-computer-language/index.html",
-    "href": "posts/ko/2025-03-30-natural-language-and-computer-language/index.html",
-    "title": "자연어와 컴퓨터 언어",
-    "section": "",
-    "text": "국비 코딩 학원에서 코딩을 하다가 문득 이런 생각이 들었다:\n자연어는 극도로 높은 수준의 컴퓨터 언어라고 할 수 있지 않을까?\n까딱하면 실행이 안 되는 컴퓨터 언어와 달리,\n자연어에서는 사소한 문법 실수가 있어도 소통하는 데 지장이 없다.\n근데 이거 완전 html, css 아닌가?\n프로젝트에서 프론트 엔드를 맡게 되다 보니 이런 생각을 할 수 있게 된 것 같다.\n컴퓨터 언어에서는 변수가 중요하다.\n그렇다면 자연어에서는 변수를 어떻게 처리할까?\n자연어도 깊게 파고 들어가면 컴퓨터 언어와 비슷한 원리로 동작할 것 같다는 느낌이 든다.\n단지 표면상으로 드러나는 게 컴퓨터 언어와 너무 달라서 이 둘의 연관성을 찾기 힘들다는 문제가 있다.\n수학적으로 언어를 분석하면 컴퓨터 언어와의 공통점이 보이지 않을까 싶다."
+    "text": "저는 다양한 언어와 수학을 좋아하는 사무엘(본명: 김상윤(金尙潤))입니다. 이 블로그는 외국어 공부, 언어학, 수학, 프로그래밍 등 제가 공부한 내용을 정리하고 공유하는 공간입니다."
   },
   {
     "objectID": "en.html",
@@ -49,11 +56,11 @@
     "text": "Welcome to Samuel’s Mathematical Language Blog!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreen’s Theorem\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\nMar 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 22, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/ko/2025-03-26-green-theorem/index.html",
-    "href": "posts/ko/2025-03-26-green-theorem/index.html",
-    "title": "그린 정리란 무엇일까",
+    "objectID": "ko.html",
+    "href": "ko.html",
+    "title": "한국어 블로그",
     "section": "",
-    "text": "그린 정리는\n👨🏻‍🏫: 오늘은 그린 정리에 대해서 배워 보자.\n👨🏻‍🎓: 그린 정리가 뭐야?\n👨🏻‍🏫: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.\n그린 정리를 식으로 나타내면 다음과 같아:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\n\\]\n즉, 좌변이 \\(\\oint_C (P \\, dx + Q \\, dy)\\)의 형태일 때, 우변인 \\(\\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\\)의 형태로 바꾸거나, 그 반대로 바꿀 수 있다는 거지.\n👨🏻‍🎓: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.\n👨🏻‍🏫: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?\n👨🏻‍🎓: 미적분학의 기본 정리를 말하는 거구나:\n\\[\\int_a^b F'(x)\\, dx = F(b) - F(a)\\]\n적분 기호 안의 \\(F'(x)\\)가 \\(F(x)\\)의 도함수이기 때문에 가능한 식이지. 즉, 원시 함수를 이용해서 적분을 풀 수 있음을 보여주는 거지.\n그러면 \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\)라는 식은 다변수 함수에서의 도함수와 같은 식이라고 볼 수 있겠다.\n👨🏻‍🏫: \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\) 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든.\n동기화 확인"
+    "text": "Crossy Road와 확률\n\n\n\n\n\n\nlife\n\n\nmathematics\n\n\nprobability\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n\n\n\n\n\n\n그린 정리란 무엇일까\n\n\n\n\n\n\nmathematics\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n\n\n\n\n\n\n나의 발견\n\n\n\n\n\n\nprobability\n\n\n\n\n\n\n\n\n\n2025. 4. 7.\n\n\n\n\n\n\n\n\n\n\n\n\n자연어와 컴퓨터 언어\n\n\n\n\n\n\nlanguage\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n일치 없음"
   },
   {
     "objectID": "posts/en/post-with-code/index.html",
@@ -63,17 +70,17 @@
     "text": "This is a post with executable code."
   },
   {
-    "objectID": "posts/en/2025-03-26-green-theorem/index.html",
-    "href": "posts/en/2025-03-26-green-theorem/index.html",
-    "title": "Green’s Theorem",
+    "objectID": "posts/ko/2025-03-26-green-theorem/index.html",
+    "href": "posts/ko/2025-03-26-green-theorem/index.html",
+    "title": "그린 정리란 무엇일까",
     "section": "",
-    "text": "Green’s Theorem relates a line integral around a simple closed curve C to a double integral over the plane region D bounded by C:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\\\partial Q}{\\\\partial x} - \\frac{\\\\partial P}{\\\\partial y} \\\\right) dx \\, dy\n\\]\nIt has applications in linear algebra, electromagnetism, and fluid dynamics."
+    "text": "그린 정리는\n👨🏻‍🏫: 오늘은 그린 정리에 대해서 배워 보자.\n👨🏻‍🎓: 그린 정리가 뭐야?\n👨🏻‍🏫: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.\n그린 정리를 식으로 나타내면 다음과 같아:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\n\\]\n즉, 좌변이 \\(\\oint_C (P \\, dx + Q \\, dy)\\)의 형태일 때, 우변인 \\(\\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\\)의 형태로 바꾸거나, 그 반대로 바꿀 수 있다는 거지.\n👨🏻‍🎓: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.\n👨🏻‍🏫: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?\n👨🏻‍🎓: 미적분학의 기본 정리를 말하는 거구나:\n\\[\\int_a^b F'(x)\\, dx = F(b) - F(a)\\]\n적분 기호 안의 \\(F'(x)\\)가 \\(F(x)\\)의 도함수이기 때문에 가능한 식이지. 즉, 원시 함수를 이용해서 적분을 풀 수 있음을 보여주는 거지.\n그러면 \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\)라는 식은 다변수 함수에서의 도함수와 같은 식이라고 볼 수 있겠다.\n👨🏻‍🏫: \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\) 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든.\n동기화 확인"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "소개",
+    "objectID": "posts/ko/2025-03-30-natural-language-and-computer-language/index.html",
+    "href": "posts/ko/2025-03-30-natural-language-and-computer-language/index.html",
+    "title": "자연어와 컴퓨터 언어",
     "section": "",
-    "text": "저는 다양한 언어와 수학을 좋아하는 사무엘(본명: 김상윤(金尙潤))입니다. 이 블로그는 외국어 공부, 언어학, 수학, 프로그래밍 등 제가 공부한 내용을 정리하고 공유하는 공간입니다."
+    "text": "국비 코딩 학원에서 코딩을 하다가 문득 이런 생각이 들었다:\n자연어는 극도로 높은 수준의 컴퓨터 언어라고 할 수 있지 않을까?\n까딱하면 실행이 안 되는 컴퓨터 언어와 달리,\n자연어에서는 사소한 문법 실수가 있어도 소통하는 데 지장이 없다.\n근데 이거 완전 html, css 아닌가?\n프로젝트에서 프론트 엔드를 맡게 되다 보니 이런 생각을 할 수 있게 된 것 같다.\n컴퓨터 언어에서는 변수가 중요하다.\n그렇다면 자연어에서는 변수를 어떻게 처리할까?\n자연어도 깊게 파고 들어가면 컴퓨터 언어와 비슷한 원리로 동작할 것 같다는 느낌이 든다.\n단지 표면상으로 드러나는 게 컴퓨터 언어와 너무 달라서 이 둘의 연관성을 찾기 힘들다는 문제가 있다.\n수학적으로 언어를 분석하면 컴퓨터 언어와의 공통점이 보이지 않을까 싶다."
   }
 ]

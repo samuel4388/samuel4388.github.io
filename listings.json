@@ -1,18 +1,19 @@
 [
   {
-    "listing": "/ko.html",
-    "items": [
-      "/posts/ko/2025-03-30-crossy-road-and-probability/index.html",
-      "/posts/ko/2025-03-26-green-theorem/index.html",
-      "/posts/ko/2025-03-30-natural-language-and-computer-language/index.html"
-    ]
-  },
-  {
     "listing": "/en.html",
     "items": [
       "/posts/en/2025-03-26-green-theorem/index.html",
       "/posts/en/post-with-code/index.html",
       "/posts/en/welcome/index.html"
+    ]
+  },
+  {
+    "listing": "/ko.html",
+    "items": [
+      "/posts/ko/2025-03-30-crossy-road-and-probability/index.html",
+      "/posts/ko/2025-03-26-green-theorem/index.html",
+      "/posts/ko/2025-04-07-my-discovery/index.html",
+      "/posts/ko/2025-03-30-natural-language-and-computer-language/index.html"
     ]
   }
 ]
