@@ -1,7 +1,7 @@
 ---
 title: "자연어와 컴퓨터 언어"
 lang: ko
-translation-key: 2025-03-30-natural-language-and-computer-language
+translation-key: 250330_자연어와_컴퓨터_언어
 categories: [language]
 date: 2025-03-30
 ---
