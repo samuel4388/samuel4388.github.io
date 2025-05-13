@@ -11,9 +11,9 @@ Chapter 6, Problem 6.47, p.274
 
 오늘 훨씬 간단하게 풀 수 있는 문제를, 어렵지만 참신한 방법으로 풀어 보았다.
 
-**6.47.** Consider a sample of size 5 from a uniform distribution over $ (0, 1) $. Compute the probability that the median is in the interval $ \left( \frac{1}{4}, \frac{3}{4} \right) $.
+6.47. Consider a sample of size 5 from a uniform distribution over \( (0, 1) \). Compute the probability that the median is in the interval \( \left( \frac{1}{4}, \frac{3}{4} \right) \).
 
-**6.47.** $ (0, 1) $ 구간에서 균등 분포를 따르는 표본 5개를 뽑았다고 하자. 이 표본의 **중앙값이** 구간 $ \left( \frac{1}{4}, \frac{3}{4} \right) $ 안에 있을 확률을 구하라.
+6.47. \( (0, 1) \) 구간에서 균등 분포를 따르는 표본 5개를 뽑았다고 하자. 이 표본의 중앙값이 구간 \( \left( \frac{1}{4}, \frac{3}{4} \right) \) 안에 있을 확률을 구하라.
 
 사실 이 문제는 딱 보기만 해도 순서 통계량 문제라는 것을 알아차릴 수 있다. 내가 보는 책 기준 6.6절 Order Statistics, p.258에 나오는 다음 공식에 대입하면 답이 금방 나오는 문제이다.
 
