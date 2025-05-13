@@ -104,7 +104,7 @@ window.Quarto = {
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -150,57 +150,61 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">순서 통계량 문제를 다중 적분으로 접근해 보았다</h1>
-                                <div class="quarto-categories">
-                <div class="quarto-category">probability</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      
-      <div>
-      <div class="quarto-title-meta-heading">공개</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">2025년 5월 13일</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">순서 통계량 문제를 다중 적분으로 접근해 보았다</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">probability</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">공개</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2025년 5월 13일</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <p><em>A First Course in Probability</em>, 9th edition by Sheldon Ross<br>
 Chapter 6, Problem 6.47, p.274</p>
 <p>오늘 훨씬 간단하게 풀 수 있는 문제를, 어렵지만 참신한 방법으로 풀어 보았다.</p>
-<p>6.47. Consider a sample of size 5 from a uniform distribution over ( (0, 1) ). Compute the probability that the median is in the interval ( ( , ) ).</p>
-<p>6.47. ( (0, 1) ) 구간에서 균등 분포를 따르는 표본 5개를 뽑았다고 하자. 이 표본의 중앙값이 구간 ( ( , ) ) 안에 있을 확률을 구하라.</p>
-<p>사실 이 문제는 딱 보기만 해도 순서 통계량 문제라는 것을 알아차릴 수 있다. 내가 보는 책 기준 6.6절 Order Statistics, p.258에 나오는 다음 공식에 대입하면 답이 금방 나오는 문제이다.</p>
+<p><strong>6.47.</strong> Consider a sample of size 5 from a uniform distribution over ( (0, 1) ). Compute the probability that the median is in the interval ( ( , ) ).</p>
+<p><strong>6.47.</strong> ( (0, 1) ) 구간에서 균등 분포를 따르는 표본 5개를 뽑았다고 하자. 이 표본의 <strong>중앙값이</strong> 구간 ( ( , ) ) 안에 있을 확률을 구하라.</p>
+<p>사실 이 문제는 딱 보기만 해도 순서 통계량 문제라는 것을 알아차릴 수 있다. 내가 보는 책 기준 6.6절 <em>Order Statistics</em>, p.258에 나오는 다음 공식에 대입하면 답이 금방 나오는 문제이다.</p>
 <p><span class="math display">\[
-f_{X_{(j)}}(x) = \frac{n!}{(n - j)! (j - 1)!} [F(x)]^{j - 1} [1 - F(x)]^{n - j} f(x)
+f_{X_{(j)}}(x) = \frac{n!}{(n - j)! \, (j - 1)!} \left[ F(x) \right]^{j - 1} \left[ 1 - F(x) \right]^{n - j} f(x)
 \]</span></p>
-<p>사실 이 공식은 억지로 외울 필요가 있는 공식이 아니라, 조금만 생각하면 유도해 낼 수 있는 공식이다.<br>
-$ [F(x)]^{j - 1} [1 - F(x)]^{n - j} $ 는 이해하기 쉽다.<br>
-<span class="math inline">\(j\)</span>번째 값보다 작은 값이 앞에 <span class="math inline">\(j - 1\)</span>개 있어야 하고, <span class="math inline">\(j\)</span>번째 값보다 큰 값이 뒤에 <span class="math inline">\(n - j\)</span>개 있어야 하니 당연히 그런 확률들이 각각 제곱되는 구조가 된다.</p>
+<p>이 공식은 억지로 외울 필요가 있는 공식이 아니라, 조금만 생각하면 유도해 낼 수 있는 공식이다.<br>
+( ^{j - 1} ^{n - j} )는 이해하기 쉽다.<br>
+( j )번째 값보다 작은 값이 앞에 ( j - 1 )개 있어야 하고,<br>
+( j )번째 값보다 큰 값이 뒤에 ( n - j )개 있어야 하니,<br>
+이러한 확률들이 각각 제곱되는 구조가 되는 것은 당연하다.</p>
 <p>이제 이것을 만족하는 확률 변수들의 순서쌍은 여러 개 있을 수 있으므로, 조합의 수를 반영해야 한다.<br>
-전체 경우의 수는 <span class="math inline">\(n!\)</span>, 그중 <span class="math inline">\(j\)</span>번째는 고정시키고, 앞부분 <span class="math inline">\(j - 1\)</span>개와 뒷부분 <span class="math inline">\(n - j\)</span>개는 중복되므로 각각 <span class="math inline">\((j - 1)!\)</span>과 <span class="math inline">\((n - j)!\)</span>로 나누어 다항 계수로 만든 것이다.</p>
-<p>그런데 나는 이 문제를 풀 때 이 내용을 배운 것을 잊고 있었고, 무식하게 자그마치 <strong>5중 적분</strong>을 해서 풀어 보았다.</p>
+전체 경우의 수는 ( n! )이며, 그중 ( j )번째는 고정시키고,<br>
+앞부분 ( j - 1 )개와 뒷부분 ( n - j )개는 중복되므로 각각 ( (j - 1)! ), ( (n - j)! )로 나누어<br>
+결국 다항 계수가 된다.</p>
+<p>그런데 나는 이 문제를 풀 때 이 내용을 배운 것을 잊고 있었고,<br>
+무식하게 자그마치 <strong>5중 적분</strong>을 해서 풀어 보았다.</p>
 <p><span class="math display">\[
 \int_{x_3 = \frac{1}{4}}^{\frac{3}{4}} \int_{x_5 = x_3}^{1} \int_{x_4 = x_3}^{x_5} \int_{x_2 = 0}^{x_3} \int_{x_1 = 0}^{x_2}
 dx_1 \, dx_2 \, dx_4 \, dx_5 \, dx_3 \times 5!
