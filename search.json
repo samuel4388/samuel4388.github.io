@@ -4,7 +4,7 @@
     "href": "ko.html",
     "title": "한국어 블로그",
     "section": "",
-    "text": "Crossy Road와 확률\n\n\n\n\n\n\nlife\n\n\nmathematics\n\n\nprobability\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n\n\n\n\n\n\n그린 정리란 무엇일까\n\n\n\n\n\n\nmathematics\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n\n\n\n\n\n\n나의 발견\n\n\n\n\n\n\nprobability\n\n\n\n\n\n\n\n\n\n2025. 4. 7.\n\n\n\n\n\n\n\n\n\n\n\n\n자연어와 컴퓨터 언어\n\n\n\n\n\n\nlanguage\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n일치 없음"
+    "text": "Crossy Road와 확률\n\n\n\n\n\n\nlife\n\n\nmathematics\n\n\nprobability\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n\n\n\n\n\n\n그린 정리란 무엇일까\n\n\n\n\n\n\nmathematics\n\n\ncalculus\n\n\n\n\n\n\n\n\n\n2025. 3. 26.\n\n\n\n\n\n\n\n\n\n\n\n\n나의 발견\n\n\n\n\n\n\nprobability\n\n\n\n\n\n\n\n\n\n2025. 4. 7.\n\n\n\n\n\n\n\n\n\n\n\n\n순서 통계량 문제를 다중 적분으로 접근해 보았다\n\n\n\n\n\n\nprobability\n\n\n\n\n\n\n\n\n\n2025. 5. 13.\n\n\n\n\n\n\n\n\n\n\n\n\n자연어와 컴퓨터 언어\n\n\n\n\n\n\nlanguage\n\n\n\n\n\n\n\n\n\n2025. 3. 30.\n\n\n\n\n\n\n일치 없음"
   },
   {
     "objectID": "index.html",
@@ -35,11 +35,18 @@
     "text": "국비 코딩 학원에서 코딩을 하다가 문득 이런 생각이 들었다:\n자연어는 극도로 높은 수준의 컴퓨터 언어라고 할 수 있지 않을까?\n까딱하면 실행이 안 되는 컴퓨터 언어와 달리,\n자연어에서는 사소한 문법 실수가 있어도 소통하는 데 지장이 없다.\n근데 이거 완전 html, css 아닌가?\n프로젝트에서 프론트 엔드를 맡게 되다 보니 이런 생각을 할 수 있게 된 것 같다.\n컴퓨터 언어에서는 변수가 중요하다.\n그렇다면 자연어에서는 변수를 어떻게 처리할까?\n자연어도 깊게 파고 들어가면 컴퓨터 언어와 비슷한 원리로 동작할 것 같다는 느낌이 든다.\n단지 표면상으로 드러나는 게 컴퓨터 언어와 너무 달라서 이 둘의 연관성을 찾기 힘들다는 문제가 있다.\n수학적으로 언어를 분석하면 컴퓨터 언어와의 공통점이 보이지 않을까 싶다."
   },
   {
-    "objectID": "posts/ko/250407_나의_발견/index.html",
-    "href": "posts/ko/250407_나의_발견/index.html",
-    "title": "나의 발견",
+    "objectID": "posts/ko/250330_Crossy_Road와_확률/index.html",
+    "href": "posts/ko/250330_Crossy_Road와_확률/index.html",
+    "title": "Crossy Road와 확률",
     "section": "",
-    "text": "GPT랑 대화를 하면서 확률과 미적분의 관계에 대해서 깨닫게 됐다.\n아직 공분산을 배우기 전인데 GPT한테서 공분산이 무엇인지 듣고 나니까 벡터의 코사인 유사도 생각이 났다.\n이 얘기를 GPT한테 하니까 나보고 천재란다 ㅋㅋㅋ\n이렇게 수학 분야들은 다 달라 보여도 다 연결돼 있는 것 같아서 신기하다."
+    "text": "Crossy Road 플레이 캡처 사진\n\n\nCrossy Road(길건너 친구들)를 플레이하면서 이런 생각이 들었다.\n내가 한 스텝 건널 때마다 죽을 확률이 있지 않을까?\n물론 내가 한 스텝 건널 때마다 죽을 확률이 도로 위, 강 위, 철도 위인지에 따라 다르겠지만,\n평균적으로 한 스텝 건널 때마다 죽을 확률을 생각할 수 있지 않을까?\n나는 평균 200점에서 300점 정도가 나오는데,\n나보다 점수가 월등히 높게 나오는, 500점, 600점을 쉽게 받는 사람들은 한 스텝 건널 때의 죽을 확률이 나보다 현저히 낮지 않을까?\n한 스텝 건널 때마다 죽을 확률이 점수에 어떻게 영향을 미치게 될지 궁금해졌다.\n내가 로스의 확률론을 끝내고 나면 이에 대한 답을 얻을 수 있지 않을까."
+  },
+  {
+    "objectID": "posts/ko/250326_그린_정리란_무엇일까/index.html",
+    "href": "posts/ko/250326_그린_정리란_무엇일까/index.html",
+    "title": "그린 정리란 무엇일까",
+    "section": "",
+    "text": "그린 정리는\n👨🏻‍🏫: 오늘은 그린 정리에 대해서 배워 보자.\n👨🏻‍🎓: 그린 정리가 뭐야?\n👨🏻‍🏫: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.\n그린 정리를 식으로 나타내면 다음과 같아:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\n\\]\n즉, 좌변이 \\(\\oint_C (P \\, dx + Q \\, dy)\\)의 형태일 때, 우변인 \\(\\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\\)의 형태로 바꾸거나, 그 반대로 바꿀 수 있다는 거지.\n👨🏻‍🎓: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.\n👨🏻‍🏫: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?\n👨🏻‍🎓: 미적분학의 기본 정리를 말하는 거구나:\n\\[\\int_a^b F'(x)\\, dx = F(b) - F(a)\\]\n적분 기호 안의 \\(F'(x)\\)가 \\(F(x)\\)의 도함수이기 때문에 가능한 식이지. 즉, 원시 함수를 이용해서 적분을 풀 수 있음을 보여주는 거지.\n그러면 \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\)라는 식은 다변수 함수에서의 도함수와 같은 식이라고 볼 수 있겠다.\n👨🏻‍🏫: \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\) 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든."
   },
   {
     "objectID": "en.html",
@@ -49,18 +56,18 @@
     "text": "Welcome to Samuel’s Mathematical Language Blog!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGreen’s Theorem\n\n\n\n\n\n\nmath\n\n\ncalculus\n\n\n\n\n\n\n\n\n\nMar 26, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 25, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 22, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/ko/250326_그린_정리란_무엇일까/index.html",
-    "href": "posts/ko/250326_그린_정리란_무엇일까/index.html",
-    "title": "그린 정리란 무엇일까",
+    "objectID": "posts/ko/250407_나의_발견/index.html",
+    "href": "posts/ko/250407_나의_발견/index.html",
+    "title": "나의 발견",
     "section": "",
-    "text": "그린 정리는\n👨🏻‍🏫: 오늘은 그린 정리에 대해서 배워 보자.\n👨🏻‍🎓: 그린 정리가 뭐야?\n👨🏻‍🏫: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.\n그린 정리를 식으로 나타내면 다음과 같아:\n\\[\n\\oint_C (P \\, dx + Q \\, dy) = \\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\n\\]\n즉, 좌변이 \\(\\oint_C (P \\, dx + Q \\, dy)\\)의 형태일 때, 우변인 \\(\\iint_D \\left( \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} \\right) dx \\, dy\\)의 형태로 바꾸거나, 그 반대로 바꿀 수 있다는 거지.\n👨🏻‍🎓: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.\n👨🏻‍🏫: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?\n👨🏻‍🎓: 미적분학의 기본 정리를 말하는 거구나:\n\\[\\int_a^b F'(x)\\, dx = F(b) - F(a)\\]\n적분 기호 안의 \\(F'(x)\\)가 \\(F(x)\\)의 도함수이기 때문에 가능한 식이지. 즉, 원시 함수를 이용해서 적분을 풀 수 있음을 보여주는 거지.\n그러면 \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\)라는 식은 다변수 함수에서의 도함수와 같은 식이라고 볼 수 있겠다.\n👨🏻‍🏫: \\(\\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y}\\) 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든.\n동기화 확인"
+    "text": "GPT랑 대화를 하면서 확률과 미적분의 관계에 대해서 깨닫게 됐다.\n아직 공분산을 배우기 전인데 GPT한테서 공분산이 무엇인지 듣고 나니까 벡터의 코사인 유사도 생각이 났다.\n이 얘기를 GPT한테 하니까 나보고 천재란다 ㅋㅋㅋ\n이렇게 수학 분야들은 다 달라 보여도 다 연결돼 있는 것 같아서 신기하다."
   },
   {
-    "objectID": "posts/ko/250330_Crossy_Road와_확률/index.html",
-    "href": "posts/ko/250330_Crossy_Road와_확률/index.html",
-    "title": "Crossy Road와 확률",
+    "objectID": "posts/ko/250513_순서_통계량_문제를_다중_적분으로_접근해_보았다/index.html",
+    "href": "posts/ko/250513_순서_통계량_문제를_다중_적분으로_접근해_보았다/index.html",
+    "title": "순서 통계량 문제를 다중 적분으로 접근해 보았다",
     "section": "",
-    "text": "Crossy Road 플레이 캡처 사진\n\n\nCrossy Road(길건너 친구들)를 플레이하면서 이런 생각이 들었다.\n내가 한 스텝 건널 때마다 죽을 확률이 있지 않을까?\n물론 내가 한 스텝 건널 때마다 죽을 확률이 도로 위, 강 위, 철도 위인지에 따라 다르겠지만,\n평균적으로 한 스텝 건널 때마다 죽을 확률을 생각할 수 있지 않을까?\n나는 평균 200점에서 300점 정도가 나오는데,\n나보다 점수가 월등히 높게 나오는, 500점, 600점을 쉽게 받는 사람들은 한 스텝 건널 때의 죽을 확률이 나보다 현저히 낮지 않을까?\n한 스텝 건널 때마다 죽을 확률이 점수에 어떻게 영향을 미치게 될지 궁금해졌다.\n내가 로스의 확률론을 끝내고 나면 이에 대한 답을 얻을 수 있지 않을까."
+    "text": "A First Course in Probability, 9th edition by Sheldon Ross\nChapter 6, Problem 6.47, p.274\n오늘 훨씬 간단하게 풀 수 있는 문제를, 어렵지만 참신한 방법으로 풀어 보았다.\n6.47. Consider a sample of size 5 from a uniform distribution over $ (0, 1) $. Compute the probability that the median is in the interval $ ( , ) $.\n6.47. $ (0, 1) $ 구간에서 균등 분포를 따르는 표본 5개를 뽑았다고 하자. 이 표본의 중앙값이 구간 $ ( , ) $ 안에 있을 확률을 구하라.\n사실 이 문제는 딱 보기만 해도 순서 통계량 문제라는 것을 알아차릴 수 있다. 내가 보는 책 기준 6.6절 Order Statistics, p.258에 나오는 다음 공식에 대입하면 답이 금방 나오는 문제이다.\n\\[\nf_{X_{(j)}}(x) = \\frac{n!}{(n - j)! (j - 1)!} [F(x)]^{j - 1} [1 - F(x)]^{n - j} f(x)\n\\]\n사실 이 공식은 억지로 외울 필요가 있는 공식이 아니라, 조금만 생각하면 유도해 낼 수 있는 공식이다.\n$ [F(x)]^{j - 1} [1 - F(x)]^{n - j} $ 는 이해하기 쉽다.\n\\(j\\)번째 값보다 작은 값이 앞에 \\(j - 1\\)개 있어야 하고, \\(j\\)번째 값보다 큰 값이 뒤에 \\(n - j\\)개 있어야 하니 당연히 그런 확률들이 각각 제곱되는 구조가 된다.\n이제 이것을 만족하는 확률 변수들의 순서쌍은 여러 개 있을 수 있으므로, 조합의 수를 반영해야 한다.\n전체 경우의 수는 \\(n!\\), 그중 \\(j\\)번째는 고정시키고, 앞부분 \\(j - 1\\)개와 뒷부분 \\(n - j\\)개는 중복되므로 각각 \\((j - 1)!\\)과 \\((n - j)!\\)로 나누어 다항 계수로 만든 것이다.\n그런데 나는 이 문제를 풀 때 이 내용을 배운 것을 잊고 있었고, 무식하게 자그마치 5중 적분을 해서 풀어 보았다.\n\\[\n\\int_{x_3 = \\frac{1}{4}}^{\\frac{3}{4}} \\int_{x_5 = x_3}^{1} \\int_{x_4 = x_3}^{x_5} \\int_{x_2 = 0}^{x_3} \\int_{x_1 = 0}^{x_2}\ndx_1 \\, dx_2 \\, dx_4 \\, dx_5 \\, dx_3 \\times 5!\n\\]\n…이렇게 해도 되더라?"
   },
   {
     "objectID": "posts/en/post-with-code/index.html",
