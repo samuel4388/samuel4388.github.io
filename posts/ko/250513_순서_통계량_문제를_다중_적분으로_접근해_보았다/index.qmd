@@ -11,9 +11,9 @@ Chapter 6, Problem 6.47, p.274
 
 오늘 훨씬 간단하게 풀 수 있는 문제를, 어렵지만 참신한 방법으로 풀어 보았다.
 
-**6.47.** Consider a sample of size 5 from a uniform distribution over \( (0, 1) \). Compute the probability that the median is in the interval \( \left( \frac{1}{4}, \frac{3}{4} \right) \).
+**6.47.** Consider a sample of size 5 from a uniform distribution over <span class="math">$(0, 1)$</span>. Compute the probability that the median is in the interval <span class="math">$\left( \frac{1}{4}, \frac{3}{4} \right)$</span>.
 
-**6.47.** \( (0, 1) \) 구간에서 균등 분포를 따르는 표본 5개를 뽑았다고 하자. 이 표본의 **중앙값이** 구간 \( \left( \frac{1}{4}, \frac{3}{4} \right) \) 안에 있을 확률을 구하라.
+**6.47.** <span class="math">$(0, 1)$</span> 구간에서 균등 분포를 따르는 표본 5개를 뽑았다고 하자. 이 표본의 **중앙값이** 구간 <span class="math">$\left( \frac{1}{4}, \frac{3}{4} \right)$</span> 안에 있을 확률을 구하라.
 
 사실 이 문제는 딱 보기만 해도 순서 통계량 문제라는 것을 알아차릴 수 있다. 내가 보는 책 기준 6.6절 *Order Statistics*, p.258에 나오는 다음 공식에 대입하면 답이 금방 나오는 문제이다.
 
@@ -22,14 +22,14 @@ f_{X_{(j)}}(x) = \frac{n!}{(n - j)! \, (j - 1)!} \left[ F(x) \right]^{j - 1} \le
 $$
 
 이 공식은 억지로 외울 필요가 있는 공식이 아니라, 조금만 생각하면 유도해 낼 수 있는 공식이다.  
-\( \left[ F(x) \right]^{j - 1} \left[ 1 - F(x) \right]^{n - j} \)는 이해하기 쉽다.  
-\( j \)번째 값보다 작은 값이 앞에 \( j - 1 \)개 있어야 하고,  
-\( j \)번째 값보다 큰 값이 뒤에 \( n - j \)개 있어야 하니,  
+<span class="math">$\left[ F(x) \right]^{j - 1} \left[ 1 - F(x) \right]^{n - j}$</span>는 이해하기 쉽다.  
+<span class="math">$j$</span>번째 값보다 작은 값이 앞에 <span class="math">$j - 1$</span>개 있어야 하고,  
+<span class="math">$j$</span>번째 값보다 큰 값이 뒤에 <span class="math">$n - j$</span>개 있어야 하니,  
 이러한 확률들이 각각 제곱되는 구조가 되는 것은 당연하다.
 
 이제 이것을 만족하는 확률 변수들의 순서쌍은 여러 개 있을 수 있으므로, 조합의 수를 반영해야 한다.  
-전체 경우의 수는 \( n! \)이며, 그중 \( j \)번째는 고정시키고,  
-앞부분 \( j - 1 \)개와 뒷부분 \( n - j \)개는 중복되므로 각각 \( (j - 1)! \), \( (n - j)! \)로 나누어  
+전체 경우의 수는 <span class="math">$n!$</span>이며, 그중 <span class="math">$j$</span>번째는 고정시키고,  
+앞부분 <span class="math">$j - 1$</span>개와 뒷부분 <span class="math">$n - j$</span>개는 중복되므로 각각 <span class="math">$(j - 1)!$</span>, <span class="math">$(n - j)!$</span>로 나누어  
 결국 다항 계수가 된다.
 
 그런데 나는 이 문제를 풀 때 이 내용을 배운 것을 잊고 있었고,  
