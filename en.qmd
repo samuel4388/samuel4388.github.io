@@ -4,6 +4,7 @@ listing:
   contents: posts/en
   type: default
   categories: true
+  sort: "date desc"
 page-layout: full
 lang: en
 ---

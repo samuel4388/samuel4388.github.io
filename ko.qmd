@@ -4,6 +4,7 @@ listing:
   contents: posts/ko
   type: default
   categories: true
+  sort: "date desc"
 page-layout: full
 lang: ko
 ---
