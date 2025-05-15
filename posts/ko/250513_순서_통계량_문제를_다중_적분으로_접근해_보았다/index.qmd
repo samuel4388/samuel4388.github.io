@@ -2,7 +2,7 @@
 title: "순서 통계량 문제를 다중 적분으로 접근해 보았다"
 lang: ko
 translation-key: 250513_1
-categories: [probability]
+categories: [mathematics, probability]
 date: 2025-05-13
 ---
 

@@ -2,7 +2,7 @@
 title: "모자 문제(포함-배제의 원리)"
 lang: ko
 translation-key: 250514_1
-categories: [probability]
+categories: [mathematics, probability]
 date: 2025-05-14
 ---
 

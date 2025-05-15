@@ -2,7 +2,7 @@
 title: "나의 발견"
 lang: ko
 translation-key: 250407_1
-categories: [probability]
+categories: [personal, mathematics]
 date: 2025-04-07
 ---
 

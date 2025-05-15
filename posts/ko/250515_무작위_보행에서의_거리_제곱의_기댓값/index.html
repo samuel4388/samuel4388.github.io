@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>순서 통계량 문제를 다중 적분으로 접근해 보았다 – 사무엘의 수리 언어 블로그</title>
+<title>무작위 보행에서의 거리 제곱의 기댓값 – 사무엘의 수리 언어 블로그</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -159,7 +159,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">순서 통계량 문제를 다중 적분으로 접근해 보았다</h1>
+<h1 class="title">무작위 보행에서의 거리 제곱의 기댓값</h1>
   <div class="quarto-categories">
     <div class="quarto-category">mathematics</div>
     <div class="quarto-category">probability</div>
@@ -174,7 +174,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">공개</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2025년 5월 13일</p>
+      <p class="date">2025년 5월 15일</p>
     </div>
   </div>
   
@@ -187,33 +187,84 @@ window.Quarto = {
 
 
 <p><em>A First Course in Probability</em>, 9th edition by Sheldon Ross<br>
-Chapter 6, Problem 6.47, p.274</p>
-<p>오늘 훨씬 간단하게 풀 수 있는 문제를, 어렵지만 참신한 방법으로 풀어 보았다.</p>
-<p><strong>6.47.</strong> Consider a sample of size 5 from a uniform distribution over <span class="math"><span class="math inline">\((0, 1)\)</span></span>. Compute the probability that the median is in the interval <span class="math"><span class="math inline">\(\left( \frac{1}{4}, \frac{3}{4} \right)\)</span></span>.</p>
-<p><strong>6.47.</strong> <span class="math"><span class="math inline">\((0, 1)\)</span></span> 구간에서 균등 분포를 따르는 표본 5개를 뽑았다고 하자. 이 표본의 <strong>중앙값이</strong> 구간 <span class="math"><span class="math inline">\(\left( \frac{1}{4}, \frac{3}{4} \right)\)</span></span> 안에 있을 확률을 구하라.</p>
-<p>사실 이 문제는 딱 보기만 해도 순서 통계량 문제라는 것을 알아차릴 수 있다. 내가 보는 책 기준 6.6절 <em>Order Statistics</em>, p.258에 나오는 다음 공식에 대입하면 답이 금방 나오는 문제이다.</p>
+Chapter 7, Example 2l, p.288</p>
+<p><strong>Example 2l</strong> 평면 위의 한 점에 처음 위치한 입자를 생각해 보자.<br>
+이 입자는 고정된 길이의 걸음을 반복적으로 밟는데, 각 걸음의 방향은 완전히 무작위이다.<br>
+구체적으로 말하면, 각 걸음 이후의 위치는 이전 위치로부터 거리 1만큼 떨어져 있으며,<br>
+그 방향은 이전 방향으로부터의 각이 <span class="math inline">\((0, 2\pi)\)</span> 구간에서 균등하게 선택되는 것으로 가정한다.<br>
+이때, <span class="math inline">\(n\)</span>번의 걸음 이후 원점으로부터의 거리의 제곱의 기대값을 구하라.</p>
+<blockquote class="blockquote">
+<p>구해야 하는 것: <strong>거리의 제곱 <span class="math inline">\(D^2\)</span></strong> 의 <strong>기댓값</strong> <span class="math inline">\(\mathbb{E}[D^2]\)</span></p>
+</blockquote>
+<p>난 이 문제의 답이 0 같은 게 아닐까 싶었다. 그런데 전혀 아니었다.<br>
+만약 1차원 수직선 상에서 <span class="math inline">\(\frac{1}{2}\)</span>의 확률론 왼쪽 혹은 오른쪽만 갈 수 있다면 0일 것 같은 느낌은 든다.<br>
+(근데 이건 실제로 계산은 안 해 봤다.)</p>
+<hr>
+<p><span class="math inline">\(i\)</span>-번째 걸음에서의 위치 변화를 <span class="math inline">\((X_i, Y_i)\)</span> 라고 하면:<br>
+<span class="math inline">\(i = 1, \dots, n\)</span></p>
 <p><span class="math display">\[
-f_{X_{(j)}}(x) = \frac{n!}{(n - j)! \, (j - 1)!} \left[ F(x) \right]^{j - 1} \left[ 1 - F(x) \right]^{n - j} f(x)
+X_i = \cos \theta_i, \quad Y_i = \sin \theta_i \quad \text{where } \theta_i \sim \text{Unif}(0, 2\pi)
 \]</span></p>
-<p>이 공식은 억지로 외울 필요가 있는 공식이 아니라, 조금만 생각하면 유도해 낼 수 있는 공식이다.<br>
-<span class="math"><span class="math inline">\(\left[ F(x) \right]^{j - 1} \left[ 1 - F(x) \right]^{n - j}\)</span></span>는 이해하기 쉽다.<br>
-<span class="math"><span class="math inline">\(j\)</span></span>번째 값보다 작은 값이 앞에 <span class="math"><span class="math inline">\(j - 1\)</span></span>개 있어야 하고,<br>
-<span class="math"><span class="math inline">\(j\)</span></span>번째 값보다 큰 값이 뒤에 <span class="math"><span class="math inline">\(n - j\)</span></span>개 있어야 하니,<br>
-이러한 확률들이 각각 제곱되는 구조가 되는 것은 당연하다.</p>
-<p>이제 이것을 만족하는 확률 변수들의 순서쌍은 여러 개 있을 수 있으므로, 조합의 수를 반영해야 한다.<br>
-전체 경우의 수는 <span class="math"><span class="math inline">\(n!\)</span></span>이며, 그중 <span class="math"><span class="math inline">\(j\)</span></span>번째는 고정시키고,<br>
-앞부분 <span class="math"><span class="math inline">\(j - 1\)</span></span>개와 뒷부분 <span class="math"><span class="math inline">\(n - j\)</span></span>개는 중복되므로 각각 <span class="math"><span class="math inline">\((j - 1)!\)</span></span>, <span class="math"><span class="math inline">\((n - j)!\)</span></span>로 나누어<br>
-결국 다항 계수가 된다.</p>
-<p>그런데 나는 이 문제를 풀 때 이 내용을 배운 것을 잊고 있었고,<br>
-무식하게 자그마치 <strong>5중 적분</strong>을 해서 풀어 보았다.</p>
+<p>그러면 <span class="math inline">\(n\)</span> 걸음 후의 위치의 좌표는 다음과 같다:</p>
 <p><span class="math display">\[
-\int_{x_3 = \frac{1}{4}}^{\frac{3}{4}} \int_{x_5 = x_3}^{1} \int_{x_4 = x_3}^{x_5} \int_{x_2 = 0}^{x_3} \int_{x_1 = 0}^{x_2}
-dx_1 \, dx_2 \, dx_4 \, dx_5 \, dx_3 \times 5!
+\left( \sum_{i=1}^n X_i, \sum_{i=1}^n Y_i \right)
 \]</span></p>
-<p>…이렇게 해도 되더라?</p>
+<p>따라서 거리의 제곱은:</p>
+<p><span class="math display">\[
+D^2 = \left( \sum_{i=1}^n X_i \right)^2 + \left( \sum_{i=1}^n Y_i \right)^2
+\]</span></p>
+<p>이를 전개하면:</p>
+<p><span class="math display">\[
+\begin{aligned}
+D^2
+&amp;= \left( \sum_{i=1}^n X_i \right)^2 + \left( \sum_{i=1}^n Y_i \right)^2 \qquad \text{(피타고라스 정리)} \\
+&amp;= \sum_{i=1}^n (X_i^2 + Y_i^2) + \sum_{i \ne j} (X_i X_j + Y_i Y_j) \qquad \text{(제곱 전개)} \\
+&amp;= n + \sum_{i \ne j} \left( \cos \theta_i \cos \theta_j + \sin \theta_i \sin \theta_j \right) \\
+&amp;\qquad \text{(각 $\theta_i$에 대해 $\cos^2\theta_i + \sin^2\theta_i = 1$이므로} \\
+&amp;\qquad \text{$\sum_{i=1}^n (X_i^2 + Y_i^2) = n$)}
+\end{aligned}
+\]</span></p>
+<hr>
+<section id="기댓값-계산" class="level2">
+<h2 class="anchored" data-anchor-id="기댓값-계산">기댓값 계산</h2>
+<p>이제 기대값을 취하자:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mathbb{E}[D^2]
+&amp;= \mathbb{E} \left[ n + \sum_{i \ne j} \left( \cos\theta_i \cos\theta_j + \sin\theta_i \sin\theta_j \right) \right]
+\qquad \text{(아까 구한 $D^2$ 식에 기댓값 적용)} \\
+&amp;= \mathbb{E}[n] + \sum_{i \ne j} \mathbb{E}[\cos\theta_i \cos\theta_j] + \mathbb{E}[\sin\theta_i \sin\theta_j]
+\qquad \text{(선형성: $\mathbb{E}[X+Y] = \mathbb{E}[X] + \mathbb{E}[Y]$)} \\
+&amp;= n + \sum_{i \ne j} \mathbb{E}[\cos\theta_i] \mathbb{E}[\cos\theta_j] + \mathbb{E}[\sin\theta_i] \mathbb{E}[\sin\theta_j]
+\qquad \text{(독립성 활용: $\mathbb{E}[XY] = \mathbb{E}[X] \mathbb{E}[Y]$)} \\
+&amp;= n + \sum_{i \ne j} (0 + 0) = n
+\qquad \text{($\mathbb{E}[\cos\theta_i] = \mathbb{E}[\sin\theta_i] = 0$이므로)}
+\end{aligned}
+\]</span></p>
+<p>마지막으로, 아래의 항에서 등장했던 <span class="math inline">\(\mathbb{E}[\cos \theta_i]\)</span>와 <span class="math inline">\(\mathbb{E}[\sin \theta_i]\)</span>가 왜 0이 되는지를 수식으로 확인해 보자:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mathbb{E}[\cos \theta_i] &amp;= \frac{1}{2\pi} \int_0^{2\pi} \cos u \, du = \frac{1}{2\pi} (\sin 2\pi - \sin 0) = 0 \\
+\mathbb{E}[\sin \theta_i] &amp;= \frac{1}{2\pi} \int_0^{2\pi} \sin u \, du = \frac{1}{2\pi} (-\cos 2\pi + \cos 0) = 0
+\end{aligned}
+\]</span></p>
+<p>이는 <span class="math inline">\(\theta_i\)</span>가 <span class="math inline">\([0, 2\pi)\)</span> 구간에서 균등하게 분포한다고 가정할 때, <span class="math inline">\(\cos \theta_i\)</span>와 <span class="math inline">\(\sin \theta_i\)</span>의 평균이 각각 0이 됨을 보여준다.</p>
+<p>직관적으로 생각해 보아도, <span class="math inline">\(y = \cos x\)</span>와 <span class="math inline">\(y = \sin x\)</span>는 <span class="math inline">\([0, 2\pi]\)</span> 구간에서 <span class="math inline">\(y = 0\)</span>을 기준으로 대칭적으로 위아래로 진동하기 때문에, 그래프의 평균값이 0이라는 사실은 쉽게 예상할 수 있다.</p>
+<p>따라서 <span class="math display">\[
+\boxed{ \mathbb{E}[D^2] = n }
+\]</span></p>
+<p>예상했던 것과 달리, 무작위 보행에서의 거리 제곱의 기댓값은 <span class="math inline">\(n\)</span>이다.<br>
+왜냐하면 입자의 최종 위치는 완전히 랜덤하므로 방향 자체는 상쇄될 수 있지만 거리는 걸음수가 늚에 따라 증가하기 때문이다.<br>
+즉, 무작위 보행에서는 방향은 상쇄되어도, <strong>거리 제곱의 기댓값은 선형적으로 증가한다</strong>.</p>
+<hr>
+<p>난 또 이런 생각을 해 보았다.<br>
+여러 개의 입자가 무작위 보행을 했다면,<br>
+여러 입자들의 평균 위치를 가지고 출발점을 추정하는 데 사용할 수 있지 않을까?<br>
+GPT한테 물어 보니까 실제로 할 수 있다고 한다.</p>
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
