@@ -1,22 +1,21 @@
 project:
   type: website
-  output-dir: .
+  output-dir: docs
 
 website:
   title: "사무엘의 수리 언어 블로그"
-  favicon: images/favicon.ico
   navbar:
     left:
-      - text: "한국어"
-        href: ko.qmd
-      - text: "English"
-        href: en.qmd
+      - href: index.qmd
+        text: 홈
+      - href: about.qmd
+        text: 소개
     right:
-      - about.qmd
       - icon: github
         href: https://github.com/samuel4388
       - icon: twitter-x
         href: https://x.com/sam458755
+  page-navigation: true
 
 format:
   html:
@@ -25,3 +24,6 @@ format:
       - brand
     css: styles.css
     math: mathjax
+
+listing:
+  contents: posts/*

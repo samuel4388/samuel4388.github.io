@@ -1,5 +1,5 @@
 ---
-title: "인사말"
+title: "사무엘의 수리 언어 블로그"
 page-layout: full
 format: html
 ---
@@ -10,7 +10,7 @@ format: html
 
 ---
 
-## 🌐 언어 선택
+## 📚 최근 글
 
-- [🇰🇷 한국어 블로그](ko.html)
-- [🇬🇧 English Blog](en.html)
+::: {.quarto-posts}
+:::

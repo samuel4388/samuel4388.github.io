@@ -1,0 +1,16 @@
+# 모든 포스트에 제목 위에 배너 스타일을 적용 (예쁘게 보임)
+title-block-banner: true
+
+# 페이지 레이아웃을 기사(article) 스타일로 지정 (블로그 글에 적합)
+page-layout: article
+
+format:
+  html:
+    # 글 본문에 자동 목차 추가 (왼쪽 or 오른쪽에 뜸)
+    toc: true
+
+    # 코드 블록 우측 상단에 복사 버튼 추가
+    code-copy: true
+
+    # 코드 블록에 줄 번호 표시
+    code-line-numbers: true
