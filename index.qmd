@@ -12,5 +12,5 @@ format: html
 
 ## 📚 최근 글
 
-::: {.quarto-posts}
+::: {.quarto-posts listing="posts/*"}
 :::
