@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>모자 문제(포함-배제의 원리) – 사무엘의 수리 언어 블로그</title>
+<title>그린 정리란 무엇일까 – 사무엘의 수리 언어 블로그</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<link href="../../../images/favicon.ico" rel="icon">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-09537c9ecba8558085948e1b802a414a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "검색"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -98,17 +128,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">사무엘의 수리 언어 블로그</span>
     </a>
   </div>
@@ -119,19 +149,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../ko.html"> 
-<span class="menu-text">한국어</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">홈</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../en.html"> 
-<span class="menu-text">English</span></a>
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">소개</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../../about.html"> 
-<span class="menu-text">소개</span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/samuel4388"> <i class="bi bi-github" role="img">
 </i> 
@@ -150,121 +176,74 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">그린 정리란 무엇일까</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">mathematics</div>
+                <div class="quarto-category">calculus</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">공개</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">2025년 3월 26일</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">모자 문제(포함-배제의 원리)</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">mathematics</div>
-    <div class="quarto-category">probability</div>
-  </div>
-  </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-    <div>
-    <div class="quarto-title-meta-heading">공개</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2025년 5월 14일</p>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
-  </div>
-  
-    
-  </div>
-  
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
-</header>
 
 
-<p><em>A First Course in Probability</em>, 9th edition by Sheldon Ross<br>
-Chapter 2, Example 5m, p.39</p>
-<p><strong>예제 5m</strong> <span class="math inline">\(N\)</span>명의 남성이 파티에서 각자 자신의 모자를 방 한가운데에 던진다고 하자.<br>
-모자들은 먼저 무작위로 섞이고, 각각의 남성이 모자를 하나씩 고른다.<br>
-이때 <strong>아무도 자기 모자를 고르지 않을 확률</strong>은 얼마일까?</p>
-<hr>
-<p>이 문제는 처음 보면 당황스럽다.<br>
-이 문제를 어떻게 접근해야 하나 하는 생각이 든다.<br>
-확률론을 공부하면서 느낀 건데, 확률론은 난이도가 롤러코스터다.<br>
-앞부분은 쉽고, 뒷부분은 서서히 어려워지는 미적분과 달리,<br>
-확률론은 앞부분부터 히말라야 산맥 등정이다.<br>
-그렇다고 미적분보다 훨씬 어렵다고 하기는 뭐한 게,<br>
-확률론 특유의 논리를 체화하면 비슷한 느낌으로 다가오는 면이 있기 때문이다.</p>
-<p>이 문제는 포함-배제의 원리라는 아이디어만 있으면 풀 수 있다.<br>
-포함-배제의 원리는 벤 다이어그램을 떠올리면 쉽다.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="Venn_diagram_ABC_BW_Explanation.png" class="img-fluid figure-img" width="400"></p>
-<figcaption>벤 다이어그램</figcaption>
-</figure>
+
+<p>그린 정리는</p>
+<p><span class="speaker">👨🏻‍🏫</span>: 오늘은 그린 정리에 대해서 배워 보자.<br>
+<span class="speaker">👨🏻‍🎓</span>: 그린 정리가 뭐야?<br>
+<span class="speaker">👨🏻‍🏫</span>: 그린 정리는 선적분을 면적분으로, 면적분을 선적분으로 바꿀 수 있는 강력한 도구야. 나중에 배울 스토크스 정리, 발산 정리와도 연결되지.<br>
+그린 정리를 식으로 나타내면 다음과 같아:<br>
+<span class="math display">\[
+\oint_C (P \, dx + Q \, dy) = \iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dx \, dy
+\]</span><br>
+즉, 좌변이 <span class="boxed-math"><span class="math inline">\(\oint_C (P \, dx + Q \, dy)\)</span></span>의 형태일 때, 우변인 <span class="boxed-math"><span class="math inline">\(\iint_D \left( \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} \right) dx \, dy\)</span></span>의 형태로 바꾸거나, 그 반대로 바꿀 수 있다는 거지.<br>
+<span class="speaker">👨🏻‍🎓</span>: 즉, 단일 적분을 이중 적분 형태로 바꿀 수 있다는 뜻이구나. 그 반대도 가능하고.<br>
+<span class="speaker">👨🏻‍🏫</span>: 그렇지! 바로 그거야. 그런데 이런 식으로 하나의 식과 그 식을 적분한 식이 서로 관련이 있다는 것을 우리는 전에 본 적이 있어. 기억나?<br>
+<span class="speaker">👨🏻‍🎓</span>: 미적분학의 기본 정리를 말하는 거구나:<br>
+<span class="math display">\[\int_a^b F'(x)\, dx = F(b) - F(a)\]</span><br>
+적분 기호 안의 <span class="math inline">\(F'(x)\)</span>가 <span class="math inline">\(F(x)\)</span>의 도함수이기 때문에 가능한 식이지. 즉, 원시 함수를 이용해서 적분을 풀 수 있음을 보여주는 거지.<br>
+그러면 <span class="boxed-math"><span class="math inline">\(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\)</span></span>라는 식은 다변수 함수에서의 도함수와 같은 식이라고 볼 수 있겠다.<br>
+<span class="speaker">👨🏻‍🏫</span>: <span class="boxed-math"><span class="math inline">\(\frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y}\)</span></span> 이 식을 잘 봐 둬. 이건 우리가 나중에 배울 스토크스 정리에 나오는 curl의 2차원 버전이거든.</p>
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+
 </div>
-<p>우리가 구해야 하는 건 <span class="math"><span class="math inline">\((A \cup B \cup C)^c\)</span></span>에 해당하는 부분이다.<br>
-이를 어떻게 풀어 쓸 수 있을까?<br>
-먼저 <span class="math inline">\(A + B + C\)</span>를 하고 나면 겹치는 부분이 생긴다.<br>
-겹치는 부분인 <span class="math"><span class="math inline">\(A \cap B\)</span></span>, <span class="math"><span class="math inline">\(B \cap C\)</span></span>, <span class="math"><span class="math inline">\(C \cap A\)</span></span>를 한 번씩 빼 줘야 한다.<br>
-하지만 이렇게 하면 세 집합이 모두 겹치는 <span class="math"><span class="math inline">\(A \cap B \cap C\)</span></span>가 세 번 빠지므로, 마지막에 한 번 더 더해 주어야 한다.</p>
-<p>이게 바로 포함-배제의 원리다!</p>
-<p><span class="math display">\[
-P((A \cup B \cup C)^c) = 1 - P(A) - P(B) - P(C) + P(A \cap B) + P(B \cap C) + P(C \cap A) - P(A \cap B \cap C)
-\]</span></p>
-<p>그러면 이것을 확률론에 적용시키면 어떻게 될까?</p>
-<p>각 <span class="math inline">\(i = 1, 2, \dots, N\)</span>에 대해:</p>
-<ul>
-<li><span class="math inline">\(E_i\)</span>: <em>i</em>번째 사람이 자기 모자를 고르는 사건<br>
-이라 하면,</li>
-<li>우리가 원하는 사건은 <span class="math"><span class="math inline">\(\left( \bigcup_{i=1}^N E_i \right)^c\)</span></span>이다.</li>
-</ul>
-<p>포함-배제의 원리에 따라 다음과 같이 쓸 수 있다:</p>
-<p><span class="math display">\[
-P\left(\bigcup_{i=1}^N E_i\right)
-= \sum_{i=1}^N P(E_i)
-- \sum_{i_1 &lt; i_2} P(E_{i_1} E_{i_2})
-+ \cdots
-+ (-1)^{n+1} \sum_{i_1 &lt; \cdots &lt; i_n} P(E_{i_1} \cdots E_{i_n})
-+ \cdots
-+ (-1)^{N+1} P(E_1 E_2 \cdots E_N)
-\]</span> (이런 수식에 겁먹을 필요 없다. 이는 단지 포함-배제의 원리를 일반화한 수식에 불과하다.)</p>
-<p>각 항의 계산은 다음과 같다. 예를 들어 <span class="math inline">\(n\)</span>명의 사람이 자기 모자를 고르는 사건 <span class="math inline">\(E_{i_1} \cdots E_{i_n}\)</span>이 일어날 확률은:</p>
-<p><span class="math display">\[
-P(E_{i_1} E_{i_2} \cdots E_{i_n}) = \frac{(N - n)!}{N!}
-\]</span></p>
-<p>왜일까?<br>
-일단 전체 경우의 수는 <span class="math inline">\(N!\)</span>이기 때문에 분모에 들어간다.<br>
-<span class="math inline">\(n\)</span>명의 사람이 자기 모자를 이미 골랐기 때문에,<br>
-나머지 <span class="math inline">\(N - n\)</span>명이 남은 <span class="math inline">\(N - n\)</span>개의 모자를 임의로 고르는 경우의 수는 <span class="math inline">\((N - n)!\)</span>이고 이는 분자에 들어간다.</p>
-<p>이러한 조합은 <span class="math inline">\(\binom{N}{n}\)</span>개 있으므로, 경우의 수를 전부 고려한 전체 합은:</p>
-<p><span class="math display">\[
-\binom{N}{n} \cdot \frac{(N - n)!}{N!} = \frac{1}{n!}
-\]</span></p>
-<p>이 된다.</p>
-<p>따라서:</p>
-<p><span class="math display">\[
-P\left(\bigcup_{i=1}^N E_i\right) = \sum_{n=1}^N \frac{(-1)^{n+1}}{n!}
-\]</span></p>
-<p>결국 아무도 자기 모자를 고르지 않을 확률은:</p>
-<p><span class="math display">\[
-1 - P\left(\bigcup_{i=1}^N E_i\right) = 1 - \left(\frac{1}{1!} - \frac{1}{2!} + \frac{1}{3!} - \cdots + (-1)^N \frac{1}{N!}\right) = \sum_{i=0}^N \frac{(-1)^i}{i!}
-\]</span></p>
-<p>이것은 지수 함수의 테일러 전개와 정확히 일치한다:</p>
-<p><span class="math display">\[
-e^{-1} = \sum_{i=0}^\infty \frac{(-1)^i}{i!} \approx 0.3679
-\]</span></p>
-<p>즉, 사람이 많아질수록 아무도 자기 모자를 고르지 않을 확률은 **약 <span class="math inline">\(\frac{1}{e} \approx 0.3679\)</span>**로 수렴한다.</p>
-<p>뭔가 0으로 수렴할 것 같은 문제의 답이 뜬금없어 보이는 <span class="math inline">\(\frac{1}{e}\)</span>으로 수렴한다는 점이 신기하다.</p>
-
-
-
-
-</main> <!-- /main -->
+<div class="listing-no-matching d-none">
+일치 없음
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

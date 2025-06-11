@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>자연어와 컴퓨터 언어 – 사무엘의 수리 언어 블로그</title>
+<title>무작위 보행에서의 거리 제곱의 기댓값 – 사무엘의 수리 언어 블로그</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<link href="../../../images/favicon.ico" rel="icon">
-<script src="../../../site_libs/quarto-html/quarto.js"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-09537c9ecba8558085948e1b802a414a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "검색"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -98,17 +128,17 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">사무엘의 수리 언어 블로그</span>
     </a>
   </div>
@@ -119,19 +149,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../ko.html"> 
-<span class="menu-text">한국어</span></a>
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">홈</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../en.html"> 
-<span class="menu-text">English</span></a>
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">소개</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../../../about.html"> 
-<span class="menu-text">소개</span></a>
-  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/samuel4388"> <i class="bi bi-github" role="img">
 </i> 
@@ -150,57 +176,142 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">무작위 보행에서의 거리 제곱의 기댓값</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">mathematics</div>
+                <div class="quarto-category">probability</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">공개</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">2025년 5월 15일</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">자연어와 컴퓨터 언어</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">language</div>
-  </div>
-  </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-    <div>
-    <div class="quarto-title-meta-heading">공개</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2025년 3월 30일</p>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">목차</h2>
+   
+  <ul>
+  <li><a href="#기댓값-계산" id="toc-기댓값-계산" class="nav-link active" data-scroll-target="#기댓값-계산">기댓값 계산</a></li>
+  </ul>
+</nav>
     </div>
-  </div>
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>국비 코딩 학원에서 코딩을 하다가 문득 이런 생각이 들었다:<br>
-자연어는 극도로 높은 수준의 컴퓨터 언어라고 할 수 있지 않을까?<br>
-까딱하면 실행이 안 되는 컴퓨터 언어와 달리,<br>
-자연어에서는 사소한 문법 실수가 있어도 소통하는 데 지장이 없다.<br>
-근데 이거 완전 html, css 아닌가?<br>
-프로젝트에서 프론트 엔드를 맡게 되다 보니 이런 생각을 할 수 있게 된 것 같다.</p>
-<p>컴퓨터 언어에서는 변수가 중요하다.<br>
-그렇다면 자연어에서는 변수를 어떻게 처리할까?<br>
-자연어도 깊게 파고 들어가면 컴퓨터 언어와 비슷한 원리로 동작할 것 같다는 느낌이 든다.<br>
-단지 표면상으로 드러나는 게 컴퓨터 언어와 너무 달라서 이 둘의 연관성을 찾기 힘들다는 문제가 있다.<br>
-수학적으로 언어를 분석하면 컴퓨터 언어와의 공통점이 보이지 않을까 싶다.</p>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-</main> <!-- /main -->
+
+<p><em>A First Course in Probability</em>, 9th edition by Sheldon Ross<br>
+Chapter 7, Example 2l, p.288</p>
+<p><strong>Example 2l</strong> 평면 위의 한 점에 처음 위치한 입자를 생각해 보자.<br>
+이 입자는 고정된 길이의 걸음을 반복적으로 밟는데, 각 걸음의 방향은 완전히 무작위이다.<br>
+구체적으로 말하면, 각 걸음 이후의 위치는 이전 위치로부터 거리 1만큼 떨어져 있으며,<br>
+그 방향은 이전 방향으로부터의 각이 <span class="math inline">\((0, 2\pi)\)</span> 구간에서 균등하게 선택되는 것으로 가정한다.<br>
+이때, <span class="math inline">\(n\)</span>번의 걸음 이후 원점으로부터의 거리의 제곱의 기대값을 구하라.</p>
+<blockquote class="blockquote">
+<p>구해야 하는 것: <strong>거리의 제곱 <span class="math inline">\(D^2\)</span></strong> 의 <strong>기댓값</strong> <span class="math inline">\(\mathbb{E}[D^2]\)</span></p>
+</blockquote>
+<p>난 이 문제의 답이 0 같은 게 아닐까 싶었다. 그런데 전혀 아니었다.<br>
+만약 1차원 수직선 상에서 <span class="math inline">\(\frac{1}{2}\)</span>의 확률론 왼쪽 혹은 오른쪽만 갈 수 있다면 0일 것 같은 느낌은 든다.<br>
+(근데 이건 실제로 계산은 안 해 봤다.)</p>
+<hr>
+<p><span class="math inline">\(i\)</span>-번째 걸음에서의 위치 변화를 <span class="math inline">\((X_i, Y_i)\)</span> 라고 하면:<br>
+<span class="math inline">\(i = 1, \dots, n\)</span></p>
+<p><span class="math display">\[
+X_i = \cos \theta_i, \quad Y_i = \sin \theta_i \quad \text{where } \theta_i \sim \text{Unif}(0, 2\pi)
+\]</span></p>
+<p>그러면 <span class="math inline">\(n\)</span> 걸음 후의 위치의 좌표는 다음과 같다:</p>
+<p><span class="math display">\[
+\left( \sum_{i=1}^n X_i, \sum_{i=1}^n Y_i \right)
+\]</span></p>
+<p>따라서 거리의 제곱은:</p>
+<p><span class="math display">\[
+D^2 = \left( \sum_{i=1}^n X_i \right)^2 + \left( \sum_{i=1}^n Y_i \right)^2
+\]</span></p>
+<p>이를 전개하면:</p>
+<p><span class="math display">\[
+\begin{aligned}
+D^2
+&amp;= \left( \sum_{i=1}^n X_i \right)^2 + \left( \sum_{i=1}^n Y_i \right)^2 \qquad \text{(피타고라스 정리)} \\
+&amp;= \sum_{i=1}^n (X_i^2 + Y_i^2) + \sum_{i \ne j} (X_i X_j + Y_i Y_j) \qquad \text{(제곱 전개)} \\
+&amp;= n + \sum_{i \ne j} \left( \cos \theta_i \cos \theta_j + \sin \theta_i \sin \theta_j \right) \\
+&amp;\qquad \text{(각 $\theta_i$에 대해 $\cos^2\theta_i + \sin^2\theta_i = 1$이므로} \\
+&amp;\qquad \text{$\sum_{i=1}^n (X_i^2 + Y_i^2) = n$)}
+\end{aligned}
+\]</span></p>
+<hr>
+<section id="기댓값-계산" class="level2">
+<h2 class="anchored" data-anchor-id="기댓값-계산">기댓값 계산</h2>
+<p>이제 기대값을 취하자:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mathbb{E}[D^2]
+&amp;= \mathbb{E} \left[ n + \sum_{i \ne j} \left( \cos\theta_i \cos\theta_j + \sin\theta_i \sin\theta_j \right) \right]
+\qquad \text{(아까 구한 $D^2$ 식에 기댓값 적용)} \\
+&amp;= \mathbb{E}[n] + \sum_{i \ne j} \mathbb{E}[\cos\theta_i \cos\theta_j] + \mathbb{E}[\sin\theta_i \sin\theta_j]
+\qquad \text{(선형성: $\mathbb{E}[X+Y] = \mathbb{E}[X] + \mathbb{E}[Y]$)} \\
+&amp;= n + \sum_{i \ne j} \mathbb{E}[\cos\theta_i] \mathbb{E}[\cos\theta_j] + \mathbb{E}[\sin\theta_i] \mathbb{E}[\sin\theta_j]
+\qquad \text{(독립성 활용: $\mathbb{E}[XY] = \mathbb{E}[X] \mathbb{E}[Y]$)} \\
+&amp;= n + \sum_{i \ne j} (0 + 0) = n
+\qquad \text{($\mathbb{E}[\cos\theta_i] = \mathbb{E}[\sin\theta_i] = 0$이므로)}
+\end{aligned}
+\]</span></p>
+<p>마지막으로, 아래의 항에서 등장했던 <span class="math inline">\(\mathbb{E}[\cos \theta_i]\)</span>와 <span class="math inline">\(\mathbb{E}[\sin \theta_i]\)</span>가 왜 0이 되는지를 수식으로 확인해 보자:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mathbb{E}[\cos \theta_i] &amp;= \frac{1}{2\pi} \int_0^{2\pi} \cos u \, du = \frac{1}{2\pi} (\sin 2\pi - \sin 0) = 0 \\
+\mathbb{E}[\sin \theta_i] &amp;= \frac{1}{2\pi} \int_0^{2\pi} \sin u \, du = \frac{1}{2\pi} (-\cos 2\pi + \cos 0) = 0
+\end{aligned}
+\]</span></p>
+<p>이는 <span class="math inline">\(\theta_i\)</span>가 <span class="math inline">\([0, 2\pi)\)</span> 구간에서 균등하게 분포한다고 가정할 때, <span class="math inline">\(\cos \theta_i\)</span>와 <span class="math inline">\(\sin \theta_i\)</span>의 평균이 각각 0이 됨을 보여준다.</p>
+<p>직관적으로 생각해 보아도, <span class="math inline">\(y = \cos x\)</span>와 <span class="math inline">\(y = \sin x\)</span>는 <span class="math inline">\([0, 2\pi]\)</span> 구간에서 <span class="math inline">\(y = 0\)</span>을 기준으로 대칭적으로 위아래로 진동하기 때문에, 그래프의 평균값이 0이라는 사실은 쉽게 예상할 수 있다.</p>
+<p>따라서 <span class="math display">\[
+\boxed{ \mathbb{E}[D^2] = n }
+\]</span></p>
+<p>예상했던 것과 달리, 무작위 보행에서의 거리 제곱의 기댓값은 <span class="math inline">\(n\)</span>이다.<br>
+왜냐하면 입자의 최종 위치는 완전히 랜덤하므로 방향 자체는 상쇄될 수 있지만,<br>
+거리는 걸음수가 늚에 따라 증가하기 때문이다.<br>
+즉, 무작위 보행에서는 방향은 상쇄되어도,<br>
+<strong>거리 제곱의 기댓값은 선형적으로 증가한다</strong>.</p>
+<hr>
+<p>난 또 이런 생각을 해 보았다.<br>
+여러 개의 입자가 무작위 보행을 했다면,<br>
+여러 입자들의 평균 위치를 가지고 출발점을 추정하는 데 사용할 수 있지 않을까?<br>
+GPT한테 물어 보니까 실제로 할 수 있다고 한다.</p>
+
+
+
+
+</section>
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+
+</div>
+<div class="listing-no-matching d-none">
+일치 없음
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
