@@ -9,7 +9,7 @@ reddit r/ChatGPT에 누가 GPT더러 지금까지의 대화를 바탕으로 자�
 그 글을 읽고 나도 한번 GPT한테 GPT가 상상하는 나를 그려 달라고 해 봐야겠다는 생각이 들었다.  
 그리고 이게 그 그림이다:
 
-![GPT가 상상한 내 모습](따뜻한_미소를_지닌_초상.png){fig-align="center" width="400px"}
+![GPT가 상상한 내 모습](GPT_portrait.png){fig-align="center" width="400px"}
 
 이 그림을 보고 나도 저렇게 잘생겼으면 좋겠다는 생각이 들었다 ㅋㅋ  
 How good it must be if I looked like that!  
