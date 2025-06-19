@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.6.42">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>사무엘의 수리 언어 블로그</title>
+<title>지시 변수를 이렇게도 저렇게도 – 사무엘의 수리 언어 블로그</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-09537c9ecba8558085948e1b802a414a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -55,48 +53,19 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "일치 없음",
+    "search-matching-documents-text": "일치된 문서",
+    "search-copy-link-title": "검색 링크 복사",
+    "search-hide-matches-text": "추가 검색 결과 숨기기",
+    "search-more-match-text": "추가 검색결과",
+    "search-more-matches-text": "추가 검색결과",
+    "search-clear-button-title": "제거",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "취소",
+    "search-submit-button-title": "검색",
+    "search-label": "검색"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -128,7 +97,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -138,22 +107,22 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">사무엘의 수리 언어 블로그</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="검색"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="탐색 전환" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">홈</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">소개</span></a>
   </li>  
 </ul>
@@ -178,342 +147,116 @@ window.Quarto = {
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">사무엘의 수리 언어 블로그</h1>
-                      </div>
+    <div class="quarto-title column-body">
+      <h1 class="title">지시 변수를 이렇게도 저렇게도</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">mathematics</div>
+                <div class="quarto-category">probability</div>
+              </div>
+                  </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page-left">
+  <div class="quarto-title-meta">
 
       
+      <div>
+      <div class="quarto-title-meta-heading">공개</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">2025년 6월 19일</p>
+      </div>
+    </div>
     
       
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Y2FsY3VsdXM=">calculus <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bGFuZ3VhZ2U=">language <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bGlmZQ==">life <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bGluZ3Vpc3RpY3M=">linguistics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bWF0aGVtYXRpY3M=">mathematics <span class="quarto-category-count">(7)</span></div><div class="category" data-category="cGVyc29uYWw=">personal <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cHJvYmFiaWxpdHk=">probability <span class="quarto-category-count">(5)</span></div></div></div>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-<p>저는 다양한 언어와 수학을 좋아하는 <strong>사무엘</strong>(본명: 김상윤(金尙潤))입니다.</p>
-<p>이 블로그는 외국어, 수학, 언어학, 프로그래밍 등 제가 공부한 내용을 정리하고 공유하는 공간입니다.</p>
+<p><em>A First Course in Probability</em>, 9th edition by Sheldon Ross<br>
+Chapter 7, Problem 7.63., p.357</p>
+<p>확률 문제를 풀면 지시 변수(indicator variable)와 친해지게 된다. 재밌는 점은, 지시 변수 설정하는 방법이 한 가지만 있는 게 아니라는 것이다. 지시 변수라는 개념 자체는 간단하다. 사건이 발생하면 1이고, 사건이 발생하지 않으면 0인 변수이다. 그래서 지시 변수의 기댓값은 지시 변수가 1일 확률과 동일하다. 마치 컴퓨터의 비트와 같은 지시 변수는 잘만 활용하면 문제 풀이를 정말 용이하게 해 준다. 나는 이걸 로스 확률론 7장 63번 문제의 (a)를 풀면서 느꼈다.</p>
+<hr>
+<p><strong>7.63.</strong> 어떤 항아리에 공이 총 30개 들어 있는데, 그 중 10개는 빨간색이고 8개는 파란색이다. 이 항아리에서 무작위로 12개의 공을 꺼낸다. 빨간 공의 개수를 <span class="math inline">\(X\)</span>, 파란 공의 개수를 <span class="math inline">\(Y\)</span>라고 하자.</p>
+<p>(a) 적절한 지시 변수(즉, 베르누이 확률 변수)를 정의함으로써 <span class="math inline">\(\mathrm{Cov}(X, Y)\)</span>를 구하라. <span class="math display">\[
+X_i, Y_j \text{ such that } X = \sum_{i=1}^{10} X_i, \; Y = \sum_{j=1}^{8} Y_j
+\]</span></p>
+<hr>
+<p>먼저 교재에 나온 지시 변수를 이용해서 (a)를 구해 보자. 여기서 <span class="math inline">\(X_i\)</span>는 빨간 공들에 1부터 8까지 순서를 매긴 뒤에, 순서 매긴 공이 뽑혔을 때 1이 되는 지시 변수이다. 그러니까 예를 들어 <span class="math inline">\(X_3 = 1\)</span>은 세 번째 빨간 공이 뽑혔다는 얘기다. 그러면 이 지시 변수들의 합인 <span class="math inline">\(X\)</span>는 뽑힌 빨간 공의 개수가 된다. <span class="math inline">\(Y\)</span>에도 마찬가지의 논리가 적용된다.</p>
+<p>그러면 공분산을 어떻게 구할 수 있을까? 공분산의 이중 선형성을 이용하면 다음과 같이 쓸 수 있다: <span class="math display">\[
+\text{Cov}\left(X, Y\right) = \text{Cov}\left(\sum_{i=1}^{10} X_i, \sum_{j=1}^{8} Y_j\right) = \sum_{i=1}^{10} \sum_{j=1}^{8} \text{Cov}\left(X_i, Y_j\right)
+\]</span></p>
+<p>그러면 이제 <span class="math inline">\(\mathrm{Cov}(X_i, Y_j)\)</span>를 구하면 되는데, 이는 공분산의 정의에 따라 다음과 같이 쓸 수 있다:</p>
+<p><span class="math display">\[
+\text{Cov}(X_i, Y_j) = E[X_i Y_j] - E[X_i] E[Y_j]
+\]</span></p>
+<p><span class="math inline">\(E[X_i]\)</span>를 구하는 건 쉽다. <span class="math inline">\(30\)</span>개의 공들 중에서 <span class="math inline">\(12\)</span>개를 뽑는 상황이니까 전체 경우의 수는 <span class="math inline">\(\binom{30}{12}\)</span>가 된다. 그런데 <span class="math inline">\(i\)</span>번째 빨간 공을 구하는 경우의 수는 이미 하나를 뽑은 상황에서 나머지 <span class="math inline">\(11\)</span>개의 공을 뽑는 거니까 <span class="math inline">\(\binom{29}{11}\)</span>이 된다. <span class="math inline">\(E[Y_i]\)</span>에도 같은 논리가 적용돼서 <span class="math display">\[
+E[X_i] = E[Y_j] = \frac{\binom{29}{11}}{\binom{30}{12}} = \frac{\frac{29!}{18!11!}}{\frac{30!}{18!12!}} = \frac{12}{30} = \frac{2}{5}
+\]</span></p>
+<p>라고 쓸 수 있다.</p>
+<p>그러면 <span class="math inline">\(E[X_iY_j]\)</span>는 어떻게 구할 수 있을까? 이번에도 비슷한 논리가 적용된다. 전체 경우의 수는 같고, 이번에는 두 개가 고정된 거니까 나머지 28개의 공들 중에서 10개를 뽑으면 된다. 그러면 <span class="math display">\[
+E[X_i Y_j] = \frac{\binom{28}{10}}{\binom{30}{12}} = \frac{\frac{28!}{18!10!}}{\frac{30!}{18!12!}} = \frac{11 \cdot 12}{29 \cdot 30} = \frac{22}{145}
+\]</span></p>
+<p>따라서 <span class="math display">\[
+\text{Cov}(X_i, Y_j) = E[X_i Y_j] - E[X_i] E[Y_j] = \frac{22}{145} - \left(\frac{2}{5}\right)^2 = -\frac{6}{725}
+\]</span> <span class="math display">\[
+\text{Cov}(X, Y) = 10 \cdot 8 \cdot \left(-\frac{6}{725}\right) = -\frac{96}{145}
+\]</span></p>
+<p>이렇게 구할 수 있다.</p>
+<hr>
+<p>그런데 나는 사실 맨 처음에 이 문제를 접했을 때 책에 나온 지시 함수를 쓰지 않았다. 책에 나온 지시 함수로 푸는 게 조금 더 간단하긴 하지만, 나는 다른 방식으로 문제를 접근했다. 이번에는 <span class="math inline">\(i\)</span>번째로 뽑은 공이 빨강이면 1인 지시 함수 <span class="math inline">\(X_i\)</span>, j번째로 뽑은 공이 파랑이면 <span class="math inline">\(1\)</span>인 지시 함수 <span class="math inline">\(Y_j\)</span>를 생각해 보자: <span class="math display">\[
+X_i = \begin{cases}
+1, &amp; \text{if the i-th ball is red} \\
+0, &amp; \text{otherwise}
+\end{cases}, \quad
+Y_j = \begin{cases}
+1, &amp; \text{if the j-th ball is blue} \\
+0, &amp; \text{otherwise}
+\end{cases}
+\]</span></p>
+<p>그리고 <span class="math inline">\(X = \sum_{i=1}^{12} X_i\)</span>, <span class="math inline">\(Y = \sum_{j=1}^{12} Y_j\)</span>라고 둬 보자. 그러면 이번에는 공분산이 다음과 같이 나온다: <span class="math display">\[
+\text{Cov}(X, Y) = \text{Cov}\left(\sum_{i=1}^{12} X_i, \sum_{j=1}^{12} Y_j\right) = \sum_{i=1}^{12} \sum_{j=1}^{12} \text{Cov}(X_i, Y_j)
+\]</span></p>
+<p>이번에는 이를 <span class="math inline">\(i\)</span>와 <span class="math inline">\(j\)</span>가 같은 경우와 다른 경우로 분리해야 한다. 왜 그럴까? 예를 들어, 다섯 번째로 뽑은 공은 빨간 공이거나 파란 공이거나 둘 다 아닐 수는 있지만, 동시에 빨갛고 파랄 수는 없기 때문이다. 그래서 이 둘을 다르게 취급해야 한다. 따라서 <span class="math display">\[
+\text{Cov}(X, Y) = \sum_{i=1}^{12} \text{Cov}(X_i, Y_i) + \sum_{i \neq j} \text{Cov}(X_i, Y_j)
+\]</span></p>
+<p>이렇게 쓸 수 있다.</p>
+<p>앞서 뽑은 공들에 대한 정보가 없다는 가정 하에, 몇 번째에 뽑건 <span class="math inline">\(i\)</span>번째에 뽑은 공이 파란 공일 확률은 <span class="math inline">\(E[X_i] = \frac{10}{30} = \frac{1}{3}\)</span>이다. 마찬가지로 <span class="math inline">\(j\)</span>번째에 뽑은 공이 빨간 공일 확률은 <span class="math inline">\(E[Y_j] = \frac{8}{30} = \frac{4}{15}\)</span>이다. <span class="math inline">\(i = j\)</span>인 경우에는 <span class="math inline">\(E[X_iY_j] = E[X_iY_i]\)</span>가 <span class="math inline">\(0\)</span>이 될 수밖에 없다. 왜냐하면 지시 함수의 특성상 <span class="math inline">\(E[X_iY_i] = P\{X_iY_i = 1\}\)</span>이어야 하는데, 앞서 말했듯이 뽑은 공이 동시에 빨갛고 파랄 수 없기 때문이다. 따라서 <span class="math inline">\(i = j\)</span>인 경우 <span class="math display">\[
+\text{Cov}(X_i, Y_i) = E[X_i Y_i] - E[X_i] E[Y_i] = 0 - \frac{1}{3} \cdot \frac{4}{15} = -\frac{4}{45}
+\]</span></p>
+<p>가 된다.</p>
+<p><span class="math inline">\(i ≠ j\)</span>인 경우에는 어떻게 될까? <span class="math inline">\(E[X_i]\)</span>와 <span class="math inline">\(E[Y_j]\)</span>는 같고, <span class="math inline">\(E[X_iY_j]\)</span>만 다르게 설정하면 된다. <span class="math inline">\(E[X_iY_j] = P\{X_iY_j = 1\}\)</span>이니까, <span class="math inline">\(X_i\)</span>와 <span class="math inline">\(Y_j\)</span>가 둘 다 1이 되는 상황을 생각해 보면 된다.</p>
+<p>먼저 <span class="math inline">\(i &lt; j\)</span>인 경우를 생각해 보자. <span class="math inline">\(i\)</span>번째 뽑기에서 빨간 공이 뽑힐 확률은 <span class="math inline">\(\frac{10}{30} = \frac{1}{3}\)</span>이다. <span class="math inline">\(j\)</span>번째 뽑기에서 파란 공이 뽑힐 확률은 빨간 공이 이미 하나 뽑혔으니까 <span class="math inline">\(\frac{8}{30 - 1} = \frac{8}{29}\)</span>이다. 따라서 <span class="math inline">\(E[X_iY_j] = \frac{1}{3} \cdot \frac{8}{29} = \frac{8}{87}\)</span>이 된다.</p>
+<p>다음으로 <span class="math inline">\(i &gt; j\)</span>인 경우를 생각해 보자. <span class="math inline">\(j\)</span>번째 뽑기에서 파란 공이 뽑힐 확률은 <span class="math inline">\(\frac{8}{30} = \frac{4}{15}\)</span>이다. <span class="math inline">\(i\)</span>번째 뽑기에서 빨간 공이 뽑힐 확률은 파란 공이 이미 하나 뽑혔으니까 <span class="math inline">\(\frac{10}{30 - 1} = \frac{10}{29}\)</span>이다. 따라서 <span class="math inline">\(E[X_iY_j] = \frac{4}{15} \cdot \frac{10}{29} = \frac{40}{435} = \frac{8}{87}\)</span>이 된다.</p>
+<p>즉, <span class="math inline">\(i &lt; j\)</span>이건 <span class="math inline">\(i &gt; j\)</span>이건 <span class="math inline">\(E[X_iY_j]\)</span>는 동일하다는 점을 알 수 있다. 이는 순서와 상관 없이, 빨간 공 하나, 파란 공 하나가 뽑혔다는 사실에는 변함이 없기 때문이라고 받아들일 수 있겠다.</p>
+<p>따라서 <span class="math inline">\(i ≠ j\)</span>인 경우 <span class="math display">\[
+\text{Cov}(X_i, Y_j) = E[X_i Y_j] - E[X_i] E[Y_j] = \frac{8}{87} - \frac{1}{3} \cdot \frac{4}{15} = \frac{8}{87} - \frac{4}{45} = \frac{4}{1305} \quad (i ≠ j)
+\]</span></p>
+<p>와 같이 구할 수 있다.</p>
+<p><span class="math inline">\(i = j\)</span>인 경우는 12가지 경우가 있고, <span class="math inline">\(i ≠ j\)</span>인 경우는 <span class="math inline">\(\binom{12}{2} \cdot 2!\)</span>가지 경우가 있으므로</p>
+<p><span class="math display">\[
+\begin{align}
+\text{Cov}(X, Y) &amp;= \sum_{i=1}^{12} \text{Cov}(X_i, Y_i) + \sum_{i \neq j} \text{Cov}(X_i, Y_j) \\
+&amp;= 12 \cdot \left(-\frac{4}{45}\right) + \binom{12}{2} \cdot 2! \cdot \frac{4}{1305} = -\frac{96}{145}
+\end{align}
+\]</span></p>
+<p>이와 같이 같은 결과가 나온다.</p>
 
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="bWF0aGVtYXRpY3MlMkNwcm9iYWJpbGl0eQ==" data-listing-date-sort="1750258800000" data-listing-file-modified-sort="1750321529259" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="756">
-<a href="./posts/250619_지시_변수를_이렇게도_저렇게도/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-지시 변수를 이렇게도 저렇게도
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0aGVtYXRpY3M='); return false;">
-mathematics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvYmFiaWxpdHk='); return false;">
-probability
-</div>
-</div>
-<div class="card-text listing-description">
-<em>A First Course in Probability</em>, 9th edition by Sheldon Ross<br>
-Chapter 7, Problem 7.63., p.357
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Jun 19, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="bWF0aGVtYXRpY3MlMkNwcm9iYWJpbGl0eQ==" data-listing-date-sort="1747234800000" data-listing-file-modified-sort="1747309532870" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="488">
-<a href="./posts/250515_무작위_보행에서의_거리_제곱의_기댓값/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-무작위 보행에서의 거리 제곱의 기댓값
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0aGVtYXRpY3M='); return false;">
-mathematics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvYmFiaWxpdHk='); return false;">
-probability
-</div>
-</div>
-<div class="card-text listing-description">
-<em>A First Course in Probability</em>, 9th edition by Sheldon Ross<br>
-Chapter 7, Example 2l, p.288
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-May 15, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="bGluZ3Vpc3RpY3M=" data-listing-date-sort="1747234800000" data-listing-file-modified-sort="1749691526925" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="291">
-<a href="./posts/250515_네덜란드어_감탄문/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/250515_네덜란드어_감탄문/GPT_portrait.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-네덜란드어 감탄문
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bGluZ3Vpc3RpY3M='); return false;">
-linguistics
-</div>
-</div>
-<div class="card-text listing-description">
-reddit r/ChatGPT에 누가 GPT더러 지금까지의 대화를 바탕으로 자신을 그려 달라고 부탁했다는 글을 읽었다.<br>
-그 글을 읽고 나도 한번 GPT한테 GPT가 상상하는 나를 그려 달라고 해 봐야겠다는 생각이 들었다.<br>
-그리고 이게 그 그림이다:
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-May 15, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="bWF0aGVtYXRpY3MlMkNwcm9iYWJpbGl0eQ==" data-listing-date-sort="1747148400000" data-listing-file-modified-sort="1747305875218" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="440">
-<a href="./posts/250514_모자_문제-포함-배제의_원리-/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="posts/250514_모자_문제-포함-배제의_원리-/Venn_diagram_ABC_BW_Explanation.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-모자 문제(포함-배제의 원리)
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0aGVtYXRpY3M='); return false;">
-mathematics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvYmFiaWxpdHk='); return false;">
-probability
-</div>
-</div>
-<div class="card-text listing-description">
-<em>A First Course in Probability</em>, 9th edition by Sheldon Ross<br>
-Chapter 2, Example 5m, p.39
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-May 14, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="bWF0aGVtYXRpY3MlMkNwcm9iYWJpbGl0eQ==" data-listing-date-sort="1747062000000" data-listing-file-modified-sort="1750305061047" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="292">
-<a href="./posts/250513_순서_통계량_문제를_다중_적분으로_접근해_보았다/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-순서 통계량 문제를 다중 적분으로 접근해 보았다
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0aGVtYXRpY3M='); return false;">
-mathematics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvYmFiaWxpdHk='); return false;">
-probability
-</div>
-</div>
-<div class="card-text listing-description">
-<em>A First Course in Probability</em>, 9th edition by Sheldon Ross<br>
-Chapter 6, Problem 6.47, p.274
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-May 13, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="cGVyc29uYWwlMkNtYXRoZW1hdGljcw==" data-listing-date-sort="1743951600000" data-listing-file-modified-sort="1747305890351" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="45">
-<a href="./posts/250407_나의_발견/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-나의 발견
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('cGVyc29uYWw='); return false;">
-personal
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0aGVtYXRpY3M='); return false;">
-mathematics
-</div>
-</div>
-<div class="card-text listing-description">
-GPT랑 대화를 하면서 확률과 미적분의 관계에 대해서 깨닫게 됐다.<br>
-아직 공분산을 배우기 전인데 GPT한테서 공분산이 무엇인지 듣고 나니까 벡터의 코사인 유사도 생각이 났다.<br>
-이 얘기를 GPT한테 하니까 나보고 천재란다 ㅋㅋㅋ<br>
-이렇게 수학 분야들은 다 달라 보여도 다 연결돼 있는 것 같아서 신기하다.
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Apr 7, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="bGlmZSUyQ21hdGhlbWF0aWNzJTJDcHJvYmFiaWxpdHk=" data-listing-date-sort="1743260400000" data-listing-file-modified-sort="1747221038835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="103">
-<a href="./posts/250330_Crossy_Road와_확률/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./posts/250330_Crossy_Road와_확률/img_1522.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Crossy Road와 확률
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bGlmZQ=='); return false;">
-life
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0aGVtYXRpY3M='); return false;">
-mathematics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('cHJvYmFiaWxpdHk='); return false;">
-probability
-</div>
-</div>
-<div class="card-text listing-description">
-Crossy Road(길건너 친구들)를 플레이하면서 이런 생각이 들었다.<br>
-내가 한 스텝 건널 때마다 죽을 확률이 있지 않을까?<br>
-물론 내가 한 스텝 건널 때마다 죽을 확률이 도로 위, 강 위, 철도 위인지에 따라 다르겠지만,<br>
-평균적으로 한 스텝 건널 때마다 죽을 확률을 생각할 수 있지 않을까?
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Mar 30, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="bGFuZ3VhZ2U=" data-listing-date-sort="1743260400000" data-listing-file-modified-sort="1747221038835" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="111">
-<a href="./posts/250330_자연어와_컴퓨터_언어/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-자연어와 컴퓨터 언어
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bGFuZ3VhZ2U='); return false;">
-language
-</div>
-</div>
-<div class="card-text listing-description">
-국비 코딩 학원에서 코딩을 하다가 문득 이런 생각이 들었다:<br>
-자연어는 극도로 높은 수준의 컴퓨터 언어라고 할 수 있지 않을까?<br>
-까딱하면 실행이 안 되는 컴퓨터 언어와 달리,<br>
-자연어에서는 사소한 문법 실수가 있어도 소통하는 데 지장이 없다.<br>
-근데 이거 완전 html, css 아닌가?<br>
-프로젝트에서 프론트 엔드를…
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Mar 30, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="bWF0aGVtYXRpY3MlMkNjYWxjdWx1cw==" data-listing-date-sort="1742914800000" data-listing-file-modified-sort="1747221038831" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="227">
-<a href="./posts/250326_그린_정리란_무엇일까/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-그린 정리란 무엇일까
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('bWF0aGVtYXRpY3M='); return false;">
-mathematics
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('Y2FsY3VsdXM='); return false;">
-calculus
-</div>
-</div>
-<div class="card-text listing-description">
-그린 정리는
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-
-</div>
-<div class="listing-date">
-Mar 26, 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -557,12 +300,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "복사완료!");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "복사완료!");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
